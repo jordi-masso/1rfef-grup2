@@ -3,11 +3,31 @@ import "./App.css";
 import { api } from "./api";
 import type { MatchesJson, StandingsJson } from "./types";
 
+type PredictionMap = Record<string, { home: string; away: string }>;
+
+const STORAGE_KEY = "predictions:v1";
+
+function loadPredictions(): PredictionMap {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw) as PredictionMap;
+    return parsed ?? {};
+  } catch {
+    return {};
+  }
+}
+
+function savePredictions(p: PredictionMap) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+}
+
 export default function App() {
   const [standings, setStandings] = useState<StandingsJson | null>(null);
   const [matches, setMatches] = useState<MatchesJson | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [selectedMatchday, setSelectedMatchday] = useState<number>(1);
+  const [predictions, setPredictions] = useState<PredictionMap>(() => loadPredictions());
 
   useEffect(() => {
     (async () => {
@@ -125,10 +145,32 @@ export default function App() {
                   marginBottom: 10
                 }}
               >
-                <div style={{ textAlign: "right" }}>{m.homeName}</div>
-                <div style={{ minWidth: 90, textAlign: "center", fontWeight: 700 }}>
-                  {m.status === "played" && m.score ? `${m.score.home} - ${m.score.away}` : "vs"}
+                <div style={{ minWidth: 90, textAlign: "center" }}>
+                  {m.status === "played" && m.score ? (
+                    <strong>{m.score.home} - {m.score.away}</strong>
+                  ) : (
+                    <div style={{ display: "flex", gap: 6, justifyContent: "center" }}>
+                      <input
+                        inputMode="numeric"
+                        type="number"
+                        min={0}
+                        style={{ width: 40 }}
+                        value={predictions[m.matchId]?.home ?? ""}
+                        onChange={(e) => updatePrediction(m.matchId, "home", e.target.value)}
+                      />
+                      <span>-</span>
+                      <input
+                        inputMode="numeric"
+                        type="number"
+                        min={0}
+                        style={{ width: 40 }}
+                        value={predictions[m.matchId]?.away ?? ""}
+                        onChange={(e) => updatePrediction(m.matchId, "away", e.target.value)}
+                      />
+                    </div>
+                  )}
                 </div>
+
                 <div style={{ textAlign: "left" }}>{m.awayName}</div>
               </li>
             ))}
@@ -137,5 +179,19 @@ export default function App() {
       </section>
     </div>
   );
-}
 
+  function updatePrediction(matchId: string, side: "home" | "away", value: string) {
+    setPredictions((prev) => {
+      const next = {
+        ...prev,
+        [matchId]: {
+          home: prev[matchId]?.home ?? "",
+          away: prev[matchId]?.away ?? "",
+          [side]: value
+        }
+      };
+      savePredictions(next);
+      return next;
+    });
+  }
+}
