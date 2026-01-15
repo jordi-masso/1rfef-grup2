@@ -1,0 +1,11 @@
+{
+  "name": "@1rfef/web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"web: dev (pending vite setup)\"",
+    "build": "echo \"web: build (pending vite setup)\"",
+    "preview": "echo \"web: preview (pending vite setup)\""
+  }
+}
