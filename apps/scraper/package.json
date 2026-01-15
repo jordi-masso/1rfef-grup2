@@ -4,6 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "scrape": "echo \"scraper: scrape (pending implementation)\""
+    "scrape": "node src/index.mjs"
   }
 }

@@ -1,0 +1,39 @@
+{
+  "updatedAt": "2026-01-15T17:09:48.590Z",
+  "season": "2025-2026",
+  "group": "Grup 2",
+  "matchdays": [
+    {
+      "matchday": 1,
+      "matches": [
+        {
+          "matchId": "MD01-CEEUROPA-TEAM2",
+          "matchday": 1,
+          "homeTeamId": "CEEUROPA",
+          "awayTeamId": "TEAM2",
+          "homeName": "CE Europa",
+          "awayName": "Equip 2",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 2,
+      "matches": [
+        {
+          "matchId": "MD02-TEAM3-CEEUROPA",
+          "matchday": 2,
+          "homeTeamId": "TEAM3",
+          "awayTeamId": "CEEUROPA",
+          "homeName": "Equip 3",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-01-15T17:09:48.590Z",
+  "group": "1RFEF 2025-2026 · Grup 2",
+  "table": [
+    {
+      "pos": 1,
+      "teamId": "CEEUROPA",
+      "teamName": "CE Europa",
+      "pts": 42,
+      "mp": 20,
+      "w": 13,
+      "d": 3,
+      "l": 4,
+      "gf": 32,
+      "ga": 18,
+      "gd": 14
+    },
+    {
+      "pos": 2,
+      "teamId": "TEAM2",
+      "teamName": "Equip 2",
+      "pts": 40,
+      "mp": 20,
+      "w": 12,
+      "d": 4,
+      "l": 4,
+      "gf": 28,
+      "ga": 17,
+      "gd": 11
+    }
+  ]
+}
