@@ -48,9 +48,6 @@ jobs:
           git add data apps/web/public/data
           if git diff --cached --quiet; then
             echo "No data changes"
-          else
-            git commit -m "chore(data): update standings and matches"
-            git push
           fi
 
       - name: Build web
