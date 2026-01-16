@@ -116,16 +116,33 @@ export default function App() {
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <h2 style={{ marginBottom: 8 }}>Jornades</h2>
 
-          <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
-            <span style={{ opacity: 0.7 }}>Jornada</span>
-            <select value={selectedMatchday} onChange={(e) => setSelectedMatchday(Number(e.target.value))}>
-              {matches.matchdays.map((md) => (
-                <option key={md.matchday} value={md.matchday}>
-                  {md.matchday}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+            <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
+              <span style={{ opacity: 0.7 }}>Jornada</span>
+              <select value={selectedMatchday} onChange={(e) => setSelectedMatchday(Number(e.target.value))}>
+                {matches.matchdays.map((md) => (
+                  <option key={md.matchday} value={md.matchday}>
+                    {md.matchday}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <button
+              type="button"
+              onClick={clearPredictions}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 10,
+                border: "1px solid #ddd",
+                background: "white",
+                cursor: "pointer"
+              }}
+            >
+              Netejar
+            </button>
+          </div>
+
         </div>
 
         {!currentMatchday ? (
@@ -194,4 +211,14 @@ export default function App() {
       return next;
     });
   }
+
+  function clearPredictions() {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      // ignore
+    }
+    setPredictions({});
+  }
+
 }
