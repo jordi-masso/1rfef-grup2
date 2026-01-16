@@ -28,6 +28,7 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [selectedMatchday, setSelectedMatchday] = useState<number>(1);
   const [predictions, setPredictions] = useState<PredictionMap>(() => loadPredictions());
+  const [computedTable, setComputedTable] = useState<StandingsJson | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -65,12 +66,14 @@ export default function App() {
     );
   }
 
+  const displayedStandings = computedTable ?? standings;
+
   return (
     <div style={{ padding: 16, maxWidth: 1100, margin: "0 auto" }}>
       <header style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
         <h1 style={{ margin: 0 }}>1RFEF Grup 2</h1>
         <small style={{ opacity: 0.7 }}>
-          Actualitzat: {new Date(standings.updatedAt).toLocaleString()}
+          Actualitzat: {new Date(displayedStandings.updatedAt).toLocaleString()}
         </small>
       </header>
 
@@ -93,7 +96,7 @@ export default function App() {
               </tr>
             </thead>
             <tbody>
-              {standings.table.map((r) => (
+              {displayedStandings.table.map((r) => (
                 <tr key={r.teamId} style={{ borderBottom: "1px solid #f0f0f0" }}>
                   <td style={{ padding: 8 }}>{r.pos}</td>
                   <td style={{ padding: 8 }}>{r.teamName}</td>
@@ -140,6 +143,19 @@ export default function App() {
               }}
             >
               Netejar
+            </button>
+            <button
+              type="button"
+              onClick={calculateStandings}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 10,
+                border: "1px solid #ddd",
+                background: "white",
+                cursor: "pointer"
+              }}
+            >
+              Calcular
             </button>
           </div>
 
@@ -219,6 +235,94 @@ export default function App() {
       // ignore
     }
     setPredictions({});
+    setComputedTable(null);
+  }
+
+  function calculateStandings() {
+    if (!standings || !matches) return;
+
+    // 1) clonar files base
+    const rows = standings.table.map((r) => ({ ...r }));
+
+    // index per teamId
+    const byTeam: Record<string, (typeof rows)[number]> = {};
+    for (const r of rows) byTeam[r.teamId] = r;
+
+    // guardar posició original per desempats de fallback
+    const originalPos: Record<string, number> = {};
+    for (const r of standings.table) originalPos[r.teamId] = r.pos;
+
+    // 2) aplicar pronòstics als scheduled
+    for (const md of matches.matchdays) {
+      for (const m of md.matches) {
+        if (m.status !== "scheduled") continue;
+
+        const pred = predictions[m.matchId];
+        const home = toInt(pred?.home);
+        const away = toInt(pred?.away);
+
+        // només si hi ha marcador complet
+        if (home === null || away === null) continue;
+
+        const homeRow = byTeam[m.homeTeamId];
+        const awayRow = byTeam[m.awayTeamId];
+
+        // si algun equip no existeix a la taula (dummy), saltem
+        if (!homeRow || !awayRow) continue;
+
+        // sumar partit
+        homeRow.mp += 1;
+        awayRow.mp += 1;
+
+        homeRow.gf += home;
+        homeRow.ga += away;
+
+        awayRow.gf += away;
+        awayRow.ga += home;
+
+        homeRow.gd = homeRow.gf - homeRow.ga;
+        awayRow.gd = awayRow.gf - awayRow.ga;
+
+        // punts i W/D/L
+        if (home > away) {
+          homeRow.w += 1;
+          awayRow.l += 1;
+          homeRow.pts += 3;
+        } else if (home < away) {
+          awayRow.w += 1;
+          homeRow.l += 1;
+          awayRow.pts += 3;
+        } else {
+          homeRow.d += 1;
+          awayRow.d += 1;
+          homeRow.pts += 1;
+          awayRow.pts += 1;
+        }
+      }
+    }
+
+    // 3) ordenar i recalcular pos
+    rows.sort((a, b) => {
+      if (b.pts !== a.pts) return b.pts - a.pts;
+      if (b.gd !== a.gd) return b.gd - a.gd;
+      if (b.gf !== a.gf) return b.gf - a.gf;
+      return (originalPos[a.teamId] ?? 999) - (originalPos[b.teamId] ?? 999);
+    });
+
+    const tableWithPos = rows.map((r, i) => ({ ...r, pos: i + 1 }));
+
+    setComputedTable({
+      ...standings,
+      updatedAt: new Date().toISOString(),
+      table: tableWithPos
+    });
+  }
+
+
+  function toInt(s: string | undefined): number | null {
+    if (s == null || s.trim() === "") return null;
+    const n = Number(s);
+    return Number.isFinite(n) && n >= 0 ? Math.floor(n) : null;
   }
 
 }

@@ -40,6 +40,19 @@ const standings = {
       gf: 28,
       ga: 17,
       gd: 11
+    },
+    {
+      pos: 3,
+      teamId: "TEAM3",
+      teamName: "Equip 3",
+      pts: 35,
+      mp: 20,
+      w: 10,
+      d: 5,
+      l: 5,
+      gf: 25,
+      ga: 20,
+      gd: 5
     }
   ]
 };
