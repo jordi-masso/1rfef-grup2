@@ -1,18 +1,154 @@
 {
-  "updatedAt": "2026-01-16T12:35:26.721Z",
-  "season": "2025-2026",
-  "group": "Grup 2",
+  "updatedAt": "2026-01-16T15:44:21.932Z",
+  "competition": "Primera Federación - Grupo II",
   "matchdays": [
     {
       "matchday": 1,
       "matches": [
         {
-          "matchId": "MD01-CEEUROPA-TEAM2",
+          "matchId": "tm-4650794",
           "matchday": 1,
-          "homeTeamId": "CEEUROPA",
-          "awayTeamId": "TEAM2",
-          "homeName": "CE Europa",
-          "awayName": "Equip 2",
+          "date": "2025-08-29",
+          "time": "9:30 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Gimnàstic",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650791",
+          "matchday": 1,
+          "date": "2025-08-30",
+          "time": "7:15 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "cd-eldense",
+          "homeName": "CE Sabadell",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650793",
+          "matchday": 1,
+          "date": null,
+          "time": "7:30 PM",
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "ce-europa",
+          "homeName": "Torremolinos",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650787",
+          "matchday": 1,
+          "date": null,
+          "time": "9:30 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Hércules CF",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650792",
+          "matchday": 1,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Sevilla Atl.",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650795",
+          "matchday": 1,
+          "date": "2025-08-31",
+          "time": "5:00 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "CD Teruel",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650789",
+          "matchday": 1,
+          "date": null,
+          "time": "7:30 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Antequera CF",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650786",
+          "matchday": 1,
+          "date": "2025-09-01",
+          "time": "7:30 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Atl. Madrileño",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650790",
+          "matchday": 1,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Villarreal CF B",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650788",
+          "matchday": 1,
+          "date": null,
+          "time": "9:30 PM",
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "real-murcia",
+          "homeName": "Marbella FC",
+          "awayName": "Real Murcia",
           "status": "played",
           "score": {
             "home": 2,
@@ -25,21 +161,4973 @@
       "matchday": 2,
       "matches": [
         {
-          "matchId": "MD02-TEAM3-CEEUROPA",
+          "matchId": "tm-4650801",
           "matchday": 2,
-          "homeTeamId": "TEAM3",
-          "awayTeamId": "CEEUROPA",
-          "homeName": "Equip 3",
+          "date": "2025-09-05",
+          "time": "7:15 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Betis Deportivo",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650802",
+          "matchday": 2,
+          "date": null,
+          "time": "9:30 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "FC Cartagena",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650797",
+          "matchday": 2,
+          "date": "2025-09-06",
+          "time": "12:00 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Eldense",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650796",
+          "matchday": 2,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "cd-teruel",
+          "homeName": "AD Alcorcón",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650799",
+          "matchday": 2,
+          "date": null,
+          "time": "7:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "CE Europa",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650803",
+          "matchday": 2,
+          "date": null,
+          "time": "9:15 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "UD Ibiza",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650800",
+          "matchday": 2,
+          "date": "2025-09-07",
+          "time": "12:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Algeciras CF",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650805",
+          "matchday": 2,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "antequera-cf",
+          "homeName": "SD Tarazona",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650798",
+          "matchday": 2,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Real Murcia",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650804",
+          "matchday": 2,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "At. Sanluqueño",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 3,
+      "matches": [
+        {
+          "matchId": "tm-4650814",
+          "matchday": 3,
+          "date": "2025-09-12",
+          "time": "7:15 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Hércules CF",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650809",
+          "matchday": 3,
+          "date": "2025-09-13",
+          "time": "4:15 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "cd-eldense",
+          "homeName": "CD Teruel",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650810",
+          "matchday": 3,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Marbella FC",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650813",
+          "matchday": 3,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "ce-europa",
+          "homeName": "Villarreal CF B",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4650807",
+          "matchday": 3,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Gimnàstic",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4650808",
+          "matchday": 3,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Antequera CF",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650815",
+          "matchday": 3,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650806",
+          "matchday": 3,
+          "date": "2025-09-14",
+          "time": "12:00 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "real-murcia",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650812",
+          "matchday": 3,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Torremolinos",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650811",
+          "matchday": 3,
+          "date": "2025-09-24",
+          "time": "5:00 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "CE Sabadell",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 4,
+      "matches": [
+        {
+          "matchId": "tm-4650818",
+          "matchday": 4,
+          "date": "2025-09-19",
+          "time": "9:30 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Real Murcia",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650823",
+          "matchday": 4,
+          "date": "2025-09-20",
+          "time": "12:00 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Betis Deportivo",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650821",
+          "matchday": 4,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Algeciras CF",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650816",
+          "matchday": 4,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "AD Alcorcón",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650820",
+          "matchday": 4,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "CE Europa",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650824",
+          "matchday": 4,
+          "date": "2025-09-21",
+          "time": "12:00 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "marbella-fc",
+          "homeName": "SD Tarazona",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650817",
+          "matchday": 4,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Eldense",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650819",
+          "matchday": 4,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "FC Cartagena",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650822",
+          "matchday": 4,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "cd-teruel",
+          "homeName": "At. Sanluqueño",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650825",
+          "matchday": 4,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "antequera-cf",
+          "homeName": "UD Ibiza",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 5,
+      "matches": [
+        {
+          "matchId": "tm-4650834",
+          "matchday": 5,
+          "date": "2025-09-27",
+          "time": "4:15 PM",
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Torremolinos",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650827",
+          "matchday": 5,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "CE Sabadell",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650831",
+          "matchday": 5,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Gimnàstic",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650835",
+          "matchday": 5,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Marbella FC",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650829",
+          "matchday": 5,
+          "date": "2025-09-28",
+          "time": "12:00 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Sevilla Atl.",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650832",
+          "matchday": 5,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "At. Sanluqueño",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650833",
+          "matchday": 5,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "ce-europa",
+          "homeName": "CD Teruel",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650830",
+          "matchday": 5,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Hércules CF",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650828",
+          "matchday": 5,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "real-murcia",
+          "homeName": "Algeciras CF",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650826",
+          "matchday": 5,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Atl. Madrileño",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 6,
+      "matches": [
+        {
+          "matchId": "tm-4650843",
+          "matchday": 6,
+          "date": "2025-10-03",
+          "time": "7:00 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Villarreal CF B",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4650839",
+          "matchday": 6,
+          "date": null,
+          "time": "9:15 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Real Murcia",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650845",
+          "matchday": 6,
+          "date": "2025-10-04",
+          "time": "2:00 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Betis Deportivo",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650841",
+          "matchday": 6,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "marbella-fc",
+          "homeName": "CE Europa",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650836",
+          "matchday": 6,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "AD Alcorcón",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650837",
+          "matchday": 6,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Eldense",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4650838",
+          "matchday": 6,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "UD Ibiza",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650842",
+          "matchday": 6,
+          "date": "2025-10-05",
+          "time": "12:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Antequera CF",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650844",
+          "matchday": 6,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "CD Teruel",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650840",
+          "matchday": 6,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "FC Cartagena",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 7,
+      "matches": [
+        {
+          "matchId": "tm-4650855",
+          "matchday": 7,
+          "date": "2025-10-11",
+          "time": "2:00 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Villarreal CF B",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 4,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4650850",
+          "matchday": 7,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Marbella FC",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650852",
+          "matchday": 7,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "real-murcia",
+          "homeName": "SD Tarazona",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650847",
+          "matchday": 7,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "ce-europa",
+          "homeName": "Algeciras CF",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4650846",
+          "matchday": 7,
+          "date": "2025-10-12",
+          "time": "12:00 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "cd-teruel",
+          "homeName": "CE Sabadell",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650851",
+          "matchday": 7,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Torremolinos",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650853",
+          "matchday": 7,
+          "date": null,
+          "time": "4:30 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Sevilla Atl.",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4650854",
+          "matchday": 7,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "antequera-cf",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4650849",
+          "matchday": 7,
+          "date": null,
+          "time": "6:45 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Gimnàstic",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4650848",
+          "matchday": 7,
+          "date": "2025-10-22",
+          "time": "7:00 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Hércules CF",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 8,
+      "matches": [
+        {
+          "matchId": "tm-4651097",
+          "matchday": 8,
+          "date": "2025-10-17",
+          "time": "7:00 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "AD Alcorcón",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4651104",
+          "matchday": 8,
+          "date": null,
+          "time": "9:15 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "FC Cartagena",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651098",
+          "matchday": 8,
+          "date": "2025-10-18",
+          "time": "4:15 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Hércules CF",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651102",
+          "matchday": 8,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "cd-eldense",
+          "homeName": "CE Europa",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651096",
+          "matchday": 8,
+          "date": "2025-10-19",
+          "time": "12:00 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651099",
+          "matchday": 8,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Gimnàstic",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651105",
+          "matchday": 8,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "CD Teruel",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651100",
+          "matchday": 8,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Antequera CF",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651103",
+          "matchday": 8,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Real Murcia",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651101",
+          "matchday": 8,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Betis Deportivo",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 9,
+      "matches": [
+        {
+          "matchId": "tm-4651140",
+          "matchday": 9,
+          "date": "2025-10-25",
+          "time": "2:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Algeciras CF",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651145",
+          "matchday": 9,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "SD Tarazona",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651139",
+          "matchday": 9,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651143",
+          "matchday": 9,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "CE Sabadell",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651137",
+          "matchday": 9,
+          "date": "2025-10-26",
+          "time": "12:00 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "real-murcia",
+          "homeName": "Eldense",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651138",
+          "matchday": 9,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "cd-teruel",
+          "homeName": "UD Ibiza",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651142",
+          "matchday": 9,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Marbella FC",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651144",
+          "matchday": 9,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Villarreal CF B",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651141",
+          "matchday": 9,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651136",
+          "matchday": 9,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "ce-europa",
+          "homeName": "Atl. Madrileño",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 10,
+      "matches": [
+        {
+          "matchId": "tm-4651106",
+          "matchday": 10,
+          "date": "2025-10-31",
+          "time": "9:15 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "AD Alcorcón",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651113",
+          "matchday": 10,
+          "date": "2025-11-01",
+          "time": "4:00 PM",
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Torremolinos",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651115",
+          "matchday": 10,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Eldense",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651107",
+          "matchday": 10,
+          "date": null,
+          "time": "6:00 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "FC Cartagena",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651108",
+          "matchday": 10,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "CE Europa",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651110",
+          "matchday": 10,
+          "date": "2025-11-02",
+          "time": "12:00 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "real-murcia",
+          "homeName": "Betis Deportivo",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651112",
+          "matchday": 10,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "SD Tarazona",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651114",
+          "matchday": 10,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "marbella-fc",
+          "homeName": "CD Teruel",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651109",
+          "matchday": 10,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Antequera CF",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651111",
+          "matchday": 10,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Gimnàstic",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 3
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 11,
+      "matches": [
+        {
+          "matchId": "tm-4651148",
+          "matchday": 11,
+          "date": "2025-11-07",
+          "time": "7:00 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "CE Sabadell",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651146",
+          "matchday": 11,
+          "date": null,
+          "time": "9:15 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651152",
+          "matchday": 11,
+          "date": "2025-11-08",
+          "time": "2:00 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "CD Teruel",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651153",
+          "matchday": 11,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "ce-europa",
+          "homeName": "Hércules CF",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651149",
+          "matchday": 11,
+          "date": null,
+          "time": "6:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Algeciras CF",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651147",
+          "matchday": 11,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Real Murcia",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651150",
+          "matchday": 11,
+          "date": "2025-11-09",
+          "time": "12:00 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651151",
+          "matchday": 11,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Marbella FC",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651155",
+          "matchday": 11,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "UD Ibiza",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651154",
+          "matchday": 11,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Villarreal CF B",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 12,
+      "matches": [
+        {
+          "matchId": "tm-4651131",
+          "matchday": 12,
+          "date": "2025-11-14",
+          "time": "7:00 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Betis Deportivo",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651129",
+          "matchday": 12,
+          "date": "2025-11-15",
+          "time": "4:00 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "SD Tarazona",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651132",
+          "matchday": 12,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "At. Sanluqueño",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651126",
+          "matchday": 12,
+          "date": "2025-11-16",
+          "time": "12:00 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "AD Alcorcón",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651128",
+          "matchday": 12,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Real Murcia",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651130",
+          "matchday": 12,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Antequera CF",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651135",
+          "matchday": 12,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Torremolinos",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651134",
+          "matchday": 12,
+          "date": null,
+          "time": "2:15 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Gimnàstic",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651127",
+          "matchday": 12,
+          "date": null,
+          "time": "4:30 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Eldense",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651133",
+          "matchday": 12,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "CE Europa",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 13,
+      "matches": [
+        {
+          "matchId": "tm-4651124",
+          "matchday": 13,
+          "date": "2025-11-21",
+          "time": "7:00 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Villarreal CF B",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651121",
+          "matchday": 13,
+          "date": "2025-11-22",
+          "time": "2:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "real-murcia",
+          "homeName": "Antequera CF",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651119",
+          "matchday": 13,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "CD Teruel",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651116",
+          "matchday": 13,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Hércules CF",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651117",
+          "matchday": 13,
+          "date": "2025-11-23",
+          "time": "12:00 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "AD Alcorcón",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651122",
+          "matchday": 13,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Algeciras CF",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651118",
+          "matchday": 13,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "cd-eldense",
+          "homeName": "FC Cartagena",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651125",
+          "matchday": 13,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "ce-europa",
+          "homeName": "UD Ibiza",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651120",
+          "matchday": 13,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "CE Sabadell",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651123",
+          "matchday": 13,
+          "date": "2025-12-10",
+          "time": "3:30 PM",
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Marbella FC",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 14,
+      "matches": [
+        {
+          "matchId": "tm-4651159",
+          "matchday": 14,
+          "date": "2025-11-28",
+          "time": "7:00 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Betis Deportivo",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651156",
+          "matchday": 14,
+          "date": null,
+          "time": "9:15 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "CE Europa",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651158",
+          "matchday": 14,
+          "date": "2025-11-29",
+          "time": "4:15 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "At. Sanluqueño",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651162",
+          "matchday": 14,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651163",
+          "matchday": 14,
+          "date": null,
+          "time": "8:00 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Eldense",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4651157",
+          "matchday": 14,
+          "date": "2025-11-30",
+          "time": "12:00 PM",
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Torremolinos",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 3
+          }
+        },
+        {
+          "matchId": "tm-4651164",
+          "matchday": 14,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "UD Ibiza",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651161",
+          "matchday": 14,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Gimnàstic",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651160",
+          "matchday": 14,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Real Murcia",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651165",
+          "matchday": 14,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Atl. Madrileño",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 15,
+      "matches": [
+        {
+          "matchId": "tm-4651174",
+          "matchday": 15,
+          "date": "2025-12-05",
+          "time": "8:30 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651167",
+          "matchday": 15,
+          "date": "2025-12-06",
+          "time": "4:00 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Hércules CF",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651169",
+          "matchday": 15,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Marbella FC",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651166",
+          "matchday": 15,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "cd-eldense",
+          "homeName": "AD Alcorcón",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651171",
+          "matchday": 15,
+          "date": "2025-12-07",
+          "time": "12:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Algeciras CF",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651170",
+          "matchday": 15,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Antequera CF",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651172",
+          "matchday": 15,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "CE Sabadell",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651173",
+          "matchday": 15,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Villarreal CF B",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651168",
+          "matchday": 15,
+          "date": "2025-12-08",
+          "time": "6:15 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "real-murcia",
+          "homeName": "FC Cartagena",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651175",
+          "matchday": 15,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "ce-europa",
+          "homeName": "SD Tarazona",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 16,
+      "matches": [
+        {
+          "matchId": "tm-4651180",
+          "matchday": 16,
+          "date": "2025-12-12",
+          "time": "7:00 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Betis Deportivo",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651184",
+          "matchday": 16,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "antequera-cf",
+          "homeName": "CE Europa",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651183",
+          "matchday": 16,
+          "date": "2025-12-13",
+          "time": "2:00 PM",
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Torremolinos",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651177",
+          "matchday": 16,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Eldense",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651179",
+          "matchday": 16,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Real Murcia",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651178",
+          "matchday": 16,
+          "date": "2025-12-14",
+          "time": "12:00 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "UD Ibiza",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651185",
+          "matchday": 16,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "CD Teruel",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651181",
+          "matchday": 16,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651182",
+          "matchday": 16,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Gimnàstic",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651176",
+          "matchday": 16,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 17,
+      "matches": [
+        {
+          "matchId": "tm-4651190",
+          "matchday": 17,
+          "date": "2025-12-19",
+          "time": "7:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Algeciras CF",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651195",
+          "matchday": 17,
+          "date": "2025-12-20",
+          "time": "2:00 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Eldense",
+          "awayName": "Betis Deportivo",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651193",
+          "matchday": 17,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Marbella FC",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651188",
+          "matchday": 17,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "cd-teruel",
+          "homeName": "SD Tarazona",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651189",
+          "matchday": 17,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Antequera CF",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 4,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651192",
+          "matchday": 17,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "CE Sabadell",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651186",
+          "matchday": 17,
+          "date": "2025-12-21",
+          "time": "12:00 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "AD Alcorcón",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651191",
+          "matchday": 17,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Sevilla Atl.",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651187",
+          "matchday": 17,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "FC Cartagena",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651194",
+          "matchday": 17,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "ce-europa",
+          "homeName": "Real Murcia",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 1
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 18,
+      "matches": [
+        {
+          "matchId": "tm-4651197",
+          "matchday": 18,
+          "date": "2026-01-03",
+          "time": "2:15 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "AD Alcorcón",
+          "awayName": "FC Cartagena",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651196",
+          "matchday": 18,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Atl. Madrileño",
+          "awayName": "SD Tarazona",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651203",
+          "matchday": 18,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Torremolinos",
+          "awayName": "Gimnàstic",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651205",
+          "matchday": 18,
+          "date": null,
+          "time": "4:30 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "antequera-cf",
+          "homeName": "CD Teruel",
+          "awayName": "Antequera CF",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651199",
+          "matchday": 18,
+          "date": null,
+          "time": "6:45 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Algeciras CF",
+          "awayName": "Sevilla Atl.",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651198",
+          "matchday": 18,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Hércules CF",
+          "awayName": "CE Sabadell",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 5
+          }
+        },
+        {
+          "matchId": "tm-4651201",
+          "matchday": 18,
+          "date": "2026-01-04",
+          "time": "12:00 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "cd-eldense",
+          "homeName": "UD Ibiza",
+          "awayName": "Eldense",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651200",
+          "matchday": 18,
+          "date": null,
+          "time": "6:45 PM",
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "ce-europa",
+          "homeName": "Betis Deportivo",
+          "awayName": "CE Europa",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651204",
+          "matchday": 18,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Villarreal CF B",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 3,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651202",
+          "matchday": 18,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "real-murcia",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Real Murcia",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 19,
+      "matches": [
+        {
+          "matchId": "tm-4651211",
+          "matchday": 19,
+          "date": "2026-01-09",
+          "time": "7:00 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Villarreal CF B",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651212",
+          "matchday": 19,
+          "date": "2026-01-10",
+          "time": "2:00 PM",
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "CE Europa",
+          "awayName": "AD Alcorcón",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651207",
+          "matchday": 19,
+          "date": "2026-01-11",
+          "time": "12:00 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "FC Cartagena",
+          "awayName": "UD Ibiza",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 4
+          }
+        },
+        {
+          "matchId": "tm-4651208",
+          "matchday": 19,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Gimnàstic",
+          "awayName": "CD Teruel",
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "matchId": "tm-4651215",
+          "matchday": 19,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "SD Tarazona",
+          "awayName": "Algeciras CF",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "matchId": "tm-4651209",
+          "matchday": 19,
+          "date": null,
+          "time": "2:00 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Antequera CF",
+          "awayName": "Atl. Madrileño",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 4
+          }
+        },
+        {
+          "matchId": "tm-4651206",
+          "matchday": 19,
+          "date": null,
+          "time": "4:30 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Eldense",
+          "awayName": "At. Sanluqueño",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651210",
+          "matchday": 19,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Betis Deportivo",
+          "awayName": "Torremolinos",
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651214",
+          "matchday": 19,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "marbella-fc",
+          "homeName": "CE Sabadell",
+          "awayName": "Marbella FC",
+          "status": "played",
+          "score": {
+            "home": 5,
+            "away": 0
+          }
+        },
+        {
+          "matchId": "tm-4651213",
+          "matchday": 19,
+          "date": null,
+          "time": "6:00 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Real Murcia",
+          "awayName": "Hércules CF",
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        }
+      ]
+    },
+    {
+      "matchday": 20,
+      "matches": [
+        {
+          "matchId": "MD20-fc-villarreal-b-fc-cartagena-2026-01-16",
+          "matchday": 20,
+          "date": "2026-01-16",
+          "time": "7:00 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Villarreal CF B",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-hercules-alicante-fc-sevilla-b-atletico-2026-01-17",
+          "matchday": 20,
+          "date": "2026-01-17",
+          "time": "2:00 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Hércules CF",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-marbella-fc-sd-tarazona-na",
+          "matchday": 20,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Marbella FC",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-ce-europa-atletico-madrid-b-na",
+          "matchday": 20,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "CE Europa",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-ad-alcorcon-antequera-cf-na",
+          "matchday": 20,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "antequera-cf",
+          "homeName": "AD Alcorcón",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-juventud-torremolinos-cf-cd-eldense-2026-01-18",
+          "matchday": 20,
+          "date": "2026-01-18",
+          "time": "12:00 PM",
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Torremolinos",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-cd-teruel-ce-sabadell-na",
+          "matchday": 20,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "CD Teruel",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-fc-algeciras-real-betis-sevilla-b-na",
+          "matchday": 20,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Algeciras CF",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-ud-ibiza-real-murcia-na",
+          "matchday": 20,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "real-murcia",
+          "homeName": "UD Ibiza",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD20-atletico-sanluqueno-gimnastic-de-tarragona-na",
+          "matchday": 20,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 21,
+      "matches": [
+        {
+          "matchId": "MD21-atletico-madrid-b-fc-villarreal-b-2026-01-24",
+          "matchday": 21,
+          "date": "2026-01-24",
+          "time": "2:00 PM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-antequera-cf-atletico-sanluqueno-na",
+          "matchday": 21,
+          "date": null,
+          "time": "4:15 PM",
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Antequera CF",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-ce-sabadell-ad-alcorcon-na",
+          "matchday": 21,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "CE Sabadell",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-fc-cartagena-ce-europa-na",
+          "matchday": 21,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "ce-europa",
+          "homeName": "FC Cartagena",
           "awayName": "CE Europa",
           "status": "scheduled"
         },
         {
-          "matchId": "MD02-TEAM2-TEAM3",
-          "matchday": 2,
-          "homeTeamId": "TEAM2",
-          "awayTeamId": "TEAM3",
-          "homeName": "Equip 2",
-          "awayName": "Equip 3",
+          "matchId": "MD21-real-betis-sevilla-b-marbella-fc-na",
+          "matchday": 21,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Betis Deportivo",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-gimnastic-de-tarragona-ud-ibiza-na",
+          "matchday": 21,
+          "date": null,
+          "time": "9:00 PM",
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Gimnàstic",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-sd-tarazona-hercules-alicante-2026-01-25",
+          "matchday": 21,
+          "date": "2026-01-25",
+          "time": "12:00 PM",
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "SD Tarazona",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-juventud-torremolinos-cf-fc-sevilla-b-atletico-na",
+          "matchday": 21,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Torremolinos",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-cd-eldense-cd-teruel-na",
+          "matchday": 21,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Eldense",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD21-real-murcia-fc-algeciras-na",
+          "matchday": 21,
+          "date": null,
+          "time": "8:30 PM",
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Real Murcia",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 22,
+      "matches": [
+        {
+          "matchId": "MD22-hercules-alicante-fc-cartagena-2026-01-30",
+          "matchday": 22,
+          "date": "2026-01-30",
+          "time": "9:15 PM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Hércules CF",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-fc-sevilla-b-atletico-ce-europa-2026-01-31",
+          "matchday": 22,
+          "date": "2026-01-31",
+          "time": "2:00 PM",
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "ce-europa",
+          "homeName": "Sevilla Atl.",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-fc-villarreal-b-sd-tarazona-na",
+          "matchday": 22,
+          "date": null,
+          "time": "6:30 PM",
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Villarreal CF B",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-atletico-sanluqueno-real-betis-sevilla-b-na",
+          "matchday": 22,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-ad-alcorcon-gimnastic-de-tarragona-2026-02-01",
+          "matchday": 22,
+          "date": "2026-02-01",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "AD Alcorcón",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-cd-teruel-real-murcia-na",
+          "matchday": 22,
+          "date": null,
+          "time": "12:00 PM",
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "real-murcia",
+          "homeName": "CD Teruel",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-marbella-fc-antequera-cf-na",
+          "matchday": 22,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Marbella FC",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-fc-algeciras-cd-eldense-na",
+          "matchday": 22,
+          "date": null,
+          "time": "4:00 PM",
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Algeciras CF",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-ud-ibiza-atletico-madrid-b-na",
+          "matchday": 22,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "UD Ibiza",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD22-ce-sabadell-juventud-torremolinos-cf-na",
+          "matchday": 22,
+          "date": null,
+          "time": "6:15 PM",
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "CE Sabadell",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 23,
+      "matches": [
+        {
+          "matchId": "MD23-fc-cartagena-fc-sevilla-b-atletico-2026-02-08",
+          "matchday": 23,
+          "date": "2026-02-08",
+          "time": "12:00 AM",
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "FC Cartagena",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-gimnastic-de-tarragona-fc-villarreal-b-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Gimnàstic",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-ce-europa-hercules-alicante-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "CE Europa",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-real-betis-sevilla-b-ud-ibiza-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Betis Deportivo",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-atletico-madrid-b-ad-alcorcon-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Atl. Madrileño",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-juventud-torremolinos-cf-cd-teruel-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Torremolinos",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-real-murcia-marbella-fc-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Real Murcia",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-antequera-cf-fc-algeciras-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Antequera CF",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-sd-tarazona-atletico-sanluqueno-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "SD Tarazona",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD23-cd-eldense-ce-sabadell-na",
+          "matchday": 23,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Eldense",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 24,
+      "matches": [
+        {
+          "matchId": "MD24-ad-alcorcon-real-murcia-2026-02-15",
+          "matchday": 24,
+          "date": "2026-02-15",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "real-murcia",
+          "homeName": "AD Alcorcón",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-ud-ibiza-ce-sabadell-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "UD Ibiza",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-fc-cartagena-marbella-fc-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "marbella-fc",
+          "homeName": "FC Cartagena",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-ce-europa-sd-tarazona-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "CE Europa",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-fc-algeciras-juventud-torremolinos-cf-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Algeciras CF",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-fc-sevilla-b-atletico-cd-teruel-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Sevilla Atl.",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-atletico-sanluqueno-atletico-madrid-b-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-fc-villarreal-b-cd-eldense-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Villarreal CF B",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-hercules-alicante-antequera-cf-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Hércules CF",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD24-gimnastic-de-tarragona-real-betis-sevilla-b-na",
+          "matchday": 24,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Gimnàstic",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 25,
+      "matches": [
+        {
+          "matchId": "MD25-atletico-madrid-b-gimnastic-de-tarragona-2026-02-22",
+          "matchday": 25,
+          "date": "2026-02-22",
+          "time": "12:00 AM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-ce-sabadell-atletico-sanluqueno-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "CE Sabadell",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-antequera-cf-ce-europa-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "ce-europa",
+          "homeName": "Antequera CF",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-real-betis-sevilla-b-fc-villarreal-b-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Betis Deportivo",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-cd-eldense-ad-alcorcon-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Eldense",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-juventud-torremolinos-cf-hercules-alicante-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Torremolinos",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-cd-teruel-ud-ibiza-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "CD Teruel",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-real-murcia-fc-cartagena-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Real Murcia",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-marbella-fc-fc-algeciras-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Marbella FC",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD25-sd-tarazona-fc-sevilla-b-atletico-na",
+          "matchday": 25,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "SD Tarazona",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 26,
+      "matches": [
+        {
+          "matchId": "MD26-ad-alcorcon-real-betis-sevilla-b-2026-03-01",
+          "matchday": 26,
+          "date": "2026-03-01",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "AD Alcorcón",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-ud-ibiza-sd-tarazona-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "UD Ibiza",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-fc-cartagena-ce-sabadell-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "FC Cartagena",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-ce-europa-juventud-torremolinos-cf-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "CE Europa",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-fc-algeciras-cd-teruel-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Algeciras CF",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-fc-sevilla-b-atletico-atletico-madrid-b-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-hercules-alicante-cd-eldense-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Hércules CF",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-fc-villarreal-b-real-murcia-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "real-murcia",
+          "homeName": "Villarreal CF B",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-atletico-sanluqueno-marbella-fc-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "marbella-fc",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD26-gimnastic-de-tarragona-antequera-cf-na",
+          "matchday": 26,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Gimnàstic",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 27,
+      "matches": [
+        {
+          "matchId": "MD27-atletico-madrid-b-hercules-alicante-2026-03-08",
+          "matchday": 27,
+          "date": "2026-03-08",
+          "time": "12:00 AM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-cd-eldense-gimnastic-de-tarragona-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Eldense",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-real-murcia-atletico-sanluqueno-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Real Murcia",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-cd-teruel-fc-villarreal-b-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "CD Teruel",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-antequera-cf-ud-ibiza-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Antequera CF",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-real-betis-sevilla-b-fc-sevilla-b-atletico-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Betis Deportivo",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-juventud-torremolinos-cf-ad-alcorcon-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Torremolinos",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-sd-tarazona-fc-cartagena-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "SD Tarazona",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-marbella-fc-ce-europa-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "ce-europa",
+          "homeName": "Marbella FC",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD27-ce-sabadell-fc-algeciras-na",
+          "matchday": 27,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "CE Sabadell",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 28,
+      "matches": [
+        {
+          "matchId": "MD28-ad-alcorcon-fc-algeciras-2026-03-15",
+          "matchday": 28,
+          "date": "2026-03-15",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "AD Alcorcón",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-hercules-alicante-real-murcia-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "real-murcia",
+          "homeName": "Hércules CF",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-ud-ibiza-marbella-fc-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "marbella-fc",
+          "homeName": "UD Ibiza",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-fc-cartagena-cd-teruel-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "cd-teruel",
+          "homeName": "FC Cartagena",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-gimnastic-de-tarragona-ce-sabadell-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Gimnàstic",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-sd-tarazona-atletico-madrid-b-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "SD Tarazona",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-atletico-sanluqueno-cd-eldense-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "cd-eldense",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-fc-villarreal-b-juventud-torremolinos-cf-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Villarreal CF B",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-fc-sevilla-b-atletico-antequera-cf-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD28-ce-europa-real-betis-sevilla-b-na",
+          "matchday": 28,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "CE Europa",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 29,
+      "matches": [
+        {
+          "matchId": "MD29-atletico-madrid-b-fc-cartagena-2026-03-22",
+          "matchday": 29,
+          "date": "2026-03-22",
+          "time": "12:00 AM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Atl. Madrileño",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-cd-eldense-ud-ibiza-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Eldense",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-real-murcia-sd-tarazona-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Real Murcia",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-marbella-fc-fc-sevilla-b-atletico-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Marbella FC",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-antequera-cf-fc-villarreal-b-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Antequera CF",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-fc-algeciras-gimnastic-de-tarragona-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Algeciras CF",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-real-betis-sevilla-b-hercules-alicante-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Betis Deportivo",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-cd-teruel-ad-alcorcon-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "CD Teruel",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-ce-sabadell-ce-europa-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "ce-europa",
+          "homeName": "CE Sabadell",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD29-juventud-torremolinos-cf-atletico-sanluqueno-na",
+          "matchday": 29,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Torremolinos",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 30,
+      "matches": [
+        {
+          "matchId": "MD30-hercules-alicante-marbella-fc-2026-03-29",
+          "matchday": 30,
+          "date": "2026-03-29",
+          "time": "12:00 AM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Hércules CF",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-fc-cartagena-atletico-sanluqueno-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "FC Cartagena",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-gimnastic-de-tarragona-juventud-torremolinos-cf-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Gimnàstic",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-real-betis-sevilla-b-cd-teruel-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Betis Deportivo",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-ud-ibiza-ad-alcorcon-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "UD Ibiza",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-sd-tarazona-cd-eldense-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "cd-eldense",
+          "homeName": "SD Tarazona",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-fc-sevilla-b-atletico-real-murcia-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "real-murcia",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-fc-villarreal-b-ce-sabadell-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Villarreal CF B",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-atletico-madrid-b-antequera-cf-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD30-ce-europa-fc-algeciras-na",
+          "matchday": 30,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "CE Europa",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 31,
+      "matches": [
+        {
+          "matchId": "MD31-ad-alcorcon-hercules-alicante-2026-04-05",
+          "matchday": 31,
+          "date": "2026-04-05",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "AD Alcorcón",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-cd-eldense-ce-europa-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "ce-europa",
+          "homeName": "Eldense",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-marbella-fc-fc-villarreal-b-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "Marbella FC",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-antequera-cf-sd-tarazona-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Antequera CF",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-fc-algeciras-ud-ibiza-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Algeciras CF",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-real-murcia-atletico-madrid-b-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Real Murcia",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-juventud-torremolinos-cf-fc-cartagena-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Torremolinos",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-cd-teruel-gimnastic-de-tarragona-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "CD Teruel",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-ce-sabadell-real-betis-sevilla-b-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "CE Sabadell",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD31-atletico-sanluqueno-fc-sevilla-b-atletico-na",
+          "matchday": 31,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 32,
+      "matches": [
+        {
+          "matchId": "MD32-atletico-madrid-b-marbella-fc-2026-04-12",
+          "matchday": 32,
+          "date": "2026-04-12",
+          "time": "12:00 AM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-hercules-alicante-atletico-sanluqueno-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "Hércules CF",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-ud-ibiza-juventud-torremolinos-cf-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "UD Ibiza",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-ce-europa-cd-teruel-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "cd-teruel",
+          "homeName": "CE Europa",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-real-betis-sevilla-b-cd-eldense-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Betis Deportivo",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-sd-tarazona-ad-alcorcon-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "SD Tarazona",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-gimnastic-de-tarragona-real-murcia-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "real-murcia",
+          "homeName": "Gimnàstic",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-fc-sevilla-b-atletico-ce-sabadell-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Sevilla Atl.",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-fc-cartagena-antequera-cf-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "antequera-cf",
+          "homeName": "FC Cartagena",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD32-fc-villarreal-b-fc-algeciras-na",
+          "matchday": 32,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Villarreal CF B",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 33,
+      "matches": [
+        {
+          "matchId": "MD33-ad-alcorcon-fc-villarreal-b-2026-04-19",
+          "matchday": 33,
+          "date": "2026-04-19",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "AD Alcorcón",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-ud-ibiza-fc-sevilla-b-atletico-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "UD Ibiza",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-marbella-fc-gimnastic-de-tarragona-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Marbella FC",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-fc-algeciras-sd-tarazona-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Algeciras CF",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-cd-teruel-atletico-madrid-b-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "CD Teruel",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-ce-sabadell-hercules-alicante-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "CE Sabadell",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-cd-eldense-fc-cartagena-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Eldense",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-atletico-sanluqueno-ce-europa-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "ce-europa",
+          "homeName": "At. Sanluqueño",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-real-murcia-antequera-cf-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Real Murcia",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD33-juventud-torremolinos-cf-real-betis-sevilla-b-na",
+          "matchday": 33,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Torremolinos",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 34,
+      "matches": [
+        {
+          "matchId": "MD34-atletico-madrid-b-real-betis-sevilla-b-2026-04-26",
+          "matchday": 34,
+          "date": "2026-04-26",
+          "time": "12:00 AM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-hercules-alicante-cd-teruel-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Hércules CF",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-fc-cartagena-gimnastic-de-tarragona-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "FC Cartagena",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-sd-tarazona-juventud-torremolinos-cf-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "SD Tarazona",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-ce-europa-real-murcia-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "real-murcia",
+          "homeName": "CE Europa",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-marbella-fc-ce-sabadell-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Marbella FC",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-antequera-cf-cd-eldense-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Antequera CF",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-atletico-sanluqueno-ad-alcorcon-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "At. Sanluqueño",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-fc-villarreal-b-ud-ibiza-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Villarreal CF B",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD34-fc-sevilla-b-atletico-fc-algeciras-na",
+          "matchday": 34,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 35,
+      "matches": [
+        {
+          "matchId": "MD35-ad-alcorcon-ce-europa-2026-05-03",
+          "matchday": 35,
+          "date": "2026-05-03",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "ce-europa",
+          "homeName": "AD Alcorcón",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-cd-eldense-marbella-fc-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "marbella-fc",
+          "homeName": "Eldense",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-ud-ibiza-atletico-sanluqueno-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "UD Ibiza",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-gimnastic-de-tarragona-fc-sevilla-b-atletico-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Gimnàstic",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-fc-algeciras-fc-cartagena-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "Algeciras CF",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-juventud-torremolinos-cf-atletico-madrid-b-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Torremolinos",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-fc-villarreal-b-hercules-alicante-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Villarreal CF B",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-ce-sabadell-real-murcia-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "real-murcia",
+          "homeName": "CE Sabadell",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-cd-teruel-sd-tarazona-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "CD Teruel",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD35-real-betis-sevilla-b-antequera-cf-na",
+          "matchday": 35,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "antequera-cf",
+          "homeName": "Betis Deportivo",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 36,
+      "matches": [
+        {
+          "matchId": "MD36-atletico-madrid-b-ce-sabadell-2026-05-10",
+          "matchday": 36,
+          "date": "2026-05-10",
+          "time": "12:00 AM",
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "Atl. Madrileño",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-hercules-alicante-ud-ibiza-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "Hércules CF",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-ce-europa-fc-villarreal-b-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "CE Europa",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-marbella-fc-juventud-torremolinos-cf-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Marbella FC",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-antequera-cf-cd-teruel-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Antequera CF",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-fc-cartagena-ad-alcorcon-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "FC Cartagena",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-fc-sevilla-b-atletico-cd-eldense-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Sevilla Atl.",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-sd-tarazona-gimnastic-de-tarragona-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "SD Tarazona",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-atletico-sanluqueno-fc-algeciras-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD36-real-murcia-real-betis-sevilla-b-na",
+          "matchday": 36,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "Real Murcia",
+          "awayName": "Betis Deportivo",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 37,
+      "matches": [
+        {
+          "matchId": "MD37-ad-alcorcon-marbella-fc-2026-05-17",
+          "matchday": 37,
+          "date": "2026-05-17",
+          "time": "12:00 AM",
+          "homeTeamId": "ad-alcorcon",
+          "awayTeamId": "marbella-fc",
+          "homeName": "AD Alcorcón",
+          "awayName": "Marbella FC",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-fc-algeciras-hercules-alicante-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-algeciras",
+          "awayTeamId": "hercules-alicante",
+          "homeName": "Algeciras CF",
+          "awayName": "Hércules CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-real-betis-sevilla-b-sd-tarazona-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-betis-sevilla-b",
+          "awayTeamId": "sd-tarazona",
+          "homeName": "Betis Deportivo",
+          "awayName": "SD Tarazona",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-cd-eldense-atletico-madrid-b-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-eldense",
+          "awayTeamId": "atletico-madrid-b",
+          "homeName": "Eldense",
+          "awayName": "Atl. Madrileño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-juventud-torremolinos-cf-real-murcia-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "juventud-torremolinos-cf",
+          "awayTeamId": "real-murcia",
+          "homeName": "Torremolinos",
+          "awayName": "Real Murcia",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-ud-ibiza-fc-cartagena-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ud-ibiza",
+          "awayTeamId": "fc-cartagena",
+          "homeName": "UD Ibiza",
+          "awayName": "FC Cartagena",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-gimnastic-de-tarragona-ce-europa-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "gimnastic-de-tarragona",
+          "awayTeamId": "ce-europa",
+          "homeName": "Gimnàstic",
+          "awayName": "CE Europa",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-ce-sabadell-antequera-cf-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-sabadell",
+          "awayTeamId": "antequera-cf",
+          "homeName": "CE Sabadell",
+          "awayName": "Antequera CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-cd-teruel-atletico-sanluqueno-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "cd-teruel",
+          "awayTeamId": "atletico-sanluqueno",
+          "homeName": "CD Teruel",
+          "awayName": "At. Sanluqueño",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD37-fc-villarreal-b-fc-sevilla-b-atletico-na",
+          "matchday": 37,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-villarreal-b",
+          "awayTeamId": "fc-sevilla-b-atletico",
+          "homeName": "Villarreal CF B",
+          "awayName": "Sevilla Atl.",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "matchday": 38,
+      "matches": [
+        {
+          "matchId": "MD38-hercules-alicante-gimnastic-de-tarragona-2026-05-24",
+          "matchday": 38,
+          "date": "2026-05-24",
+          "time": "12:00 AM",
+          "homeTeamId": "hercules-alicante",
+          "awayTeamId": "gimnastic-de-tarragona",
+          "homeName": "Hércules CF",
+          "awayName": "Gimnàstic",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-ce-europa-ud-ibiza-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "ce-europa",
+          "awayTeamId": "ud-ibiza",
+          "homeName": "CE Europa",
+          "awayName": "UD Ibiza",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-marbella-fc-cd-teruel-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "marbella-fc",
+          "awayTeamId": "cd-teruel",
+          "homeName": "Marbella FC",
+          "awayName": "CD Teruel",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-antequera-cf-juventud-torremolinos-cf-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "antequera-cf",
+          "awayTeamId": "juventud-torremolinos-cf",
+          "homeName": "Antequera CF",
+          "awayName": "Torremolinos",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-atletico-sanluqueno-fc-villarreal-b-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-sanluqueno",
+          "awayTeamId": "fc-villarreal-b",
+          "homeName": "At. Sanluqueño",
+          "awayName": "Villarreal CF B",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-fc-sevilla-b-atletico-ad-alcorcon-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-sevilla-b-atletico",
+          "awayTeamId": "ad-alcorcon",
+          "homeName": "Sevilla Atl.",
+          "awayName": "AD Alcorcón",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-real-murcia-cd-eldense-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "real-murcia",
+          "awayTeamId": "cd-eldense",
+          "homeName": "Real Murcia",
+          "awayName": "Eldense",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-sd-tarazona-ce-sabadell-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "sd-tarazona",
+          "awayTeamId": "ce-sabadell",
+          "homeName": "SD Tarazona",
+          "awayName": "CE Sabadell",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-atletico-madrid-b-fc-algeciras-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "atletico-madrid-b",
+          "awayTeamId": "fc-algeciras",
+          "homeName": "Atl. Madrileño",
+          "awayName": "Algeciras CF",
+          "status": "scheduled"
+        },
+        {
+          "matchId": "MD38-fc-cartagena-real-betis-sevilla-b-na",
+          "matchday": 38,
+          "date": null,
+          "time": null,
+          "homeTeamId": "fc-cartagena",
+          "awayTeamId": "real-betis-sevilla-b",
+          "homeName": "FC Cartagena",
+          "awayName": "Betis Deportivo",
           "status": "scheduled"
         }
       ]

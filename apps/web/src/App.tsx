@@ -6,7 +6,7 @@ import type { MatchesJson, StandingsJson } from "./types";
 type PredictionMap = Record<string, { home: string; away: string }>;
 
 const STORAGE_KEY = "predictions:v1";
-const FOCUS_TEAM_ID = "CEEUROPA";
+const FOCUS_TEAM_ID = "ce-europa";
 
 const cardStyle: React.CSSProperties = {
   background: "white",
