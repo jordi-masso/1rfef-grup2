@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { fetchText } from "./fetch.mjs";
 import { parseBeSoccerStandings } from "./parse-besoccer-standings.mjs";
 import { parseTransfermarktMatches } from "./parse-transfermarkt-matches.mjs";
+import { parseTransfermarktStandings } from "./parse-transfermarkt-standings.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -17,7 +18,8 @@ mkdirSync(debugDir, { recursive: true });
 
 const URLS = {
   standings: "https://www.besoccer.com/competition/table/primera_division_rfef/2026/group2",
-  fixtures: "https://www.transfermarkt.com/primera-rfef-footters-grupo-ii/gesamtspielplan/wettbewerb/E3G2"
+  fixtures: "https://www.transfermarkt.com/primera-rfef-footters-grupo-ii/gesamtspielplan/wettbewerb/E3G2",
+  standingsTm: "https://www.transfermarkt.com/primera-rfef-footters-grupo-ii/tabelle/wettbewerb/E3G2",
 };
 
 const updatedAt = new Date().toISOString();
@@ -28,9 +30,25 @@ async function main() {
     cachePath: join(debugDir, "besoccer-standings.html")
   });
 
-  const standingsJson = parseBeSoccerStandings(standingsHtml);
+  let standingsJson;
+
+  try {
+    const standingsHtml = await fetchText(URLS.standings, {
+      cachePath: join(debugDir, "besoccer-standings.html")
+    });
+    standingsJson = parseBeSoccerStandings(standingsHtml);
+    console.log("✅ standings from BeSoccer");
+  } catch (e) {
+    console.warn("⚠️ BeSoccer standings failed, falling back to Transfermarkt:", e.message);
+    const standingsHtmlTm = await fetchText(URLS.standingsTm, {
+      cachePath: join(debugDir, "transfermarkt-standings.html")
+    });
+    standingsJson = parseTransfermarktStandings(standingsHtmlTm);
+    console.log("✅ standings from Transfermarkt");
+  }
+
   writeFileSync(join(outDir, "standings.json"), JSON.stringify(standingsJson, null, 2), "utf-8");
-  console.log("✅ standings.json generated");
+
 
   const fixturesHtml = await fetchText(URLS.fixtures, {
     cachePath: join(debugDir, "transfermarkt-fixtures.html")
