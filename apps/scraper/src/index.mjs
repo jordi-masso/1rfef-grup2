@@ -26,25 +26,33 @@ const updatedAt = new Date().toISOString();
 
 async function main() {
   // 1) Baixa i guarda snapshots
-  const standingsHtml = await fetchText(URLS.standings, {
-    cachePath: join(debugDir, "besoccer-standings.html")
-  });
+
+  const isCI = process.env.CI === "true";
 
   let standingsJson;
 
-  try {
-    const standingsHtml = await fetchText(URLS.standings, {
-      cachePath: join(debugDir, "besoccer-standings.html")
-    });
-    standingsJson = parseBeSoccerStandings(standingsHtml);
-    console.log("✅ standings from BeSoccer");
-  } catch (e) {
-    console.warn("⚠️ BeSoccer standings failed, falling back to Transfermarkt:", e.message);
+  if (isCI) {
+    console.log("ℹ️ CI detected: skipping BeSoccer (often returns 406)");
     const standingsHtmlTm = await fetchText(URLS.standingsTm, {
       cachePath: join(debugDir, "transfermarkt-standings.html")
     });
     standingsJson = parseTransfermarktStandings(standingsHtmlTm);
     console.log("✅ standings from Transfermarkt");
+  } else {
+    try {
+      const standingsHtml = await fetchText(URLS.standings, {
+        cachePath: join(debugDir, "besoccer-standings.html")
+      });
+      standingsJson = parseBeSoccerStandings(standingsHtml);
+      console.log("✅ standings from BeSoccer");
+    } catch (e) {
+      console.warn("⚠️ BeSoccer standings failed, falling back to Transfermarkt:", e.message);
+      const standingsHtmlTm = await fetchText(URLS.standingsTm, {
+        cachePath: join(debugDir, "transfermarkt-standings.html")
+      });
+      standingsJson = parseTransfermarktStandings(standingsHtmlTm);
+      console.log("✅ standings from Transfermarkt");
+    }
   }
 
   writeFileSync(join(outDir, "standings.json"), JSON.stringify(standingsJson, null, 2), "utf-8");
