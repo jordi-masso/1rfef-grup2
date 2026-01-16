@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/<NOM_REPO>/",
+  base: "/1rfef-grup2/",
   plugins: [react()],
 })
