@@ -71,7 +71,7 @@ async function main() {
     updatedAt,
     sources: URLS,
     sizes: {
-      standingsHtml: standingsHtml.length,
+      standingsHtml: standingsJson.table.length,
       fixturesHtml: fixturesHtml.length
     }
   };
