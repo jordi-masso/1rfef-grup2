@@ -26,18 +26,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          cache: pnpm
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: Install deps
-        run: npm ci
-
-      - name: Fix Rollup optional deps (Linux)
-        run: npm rebuild rollup
+        run: pnpm install --frozen-lockfile
 
       - name: Scrape + sync data
         run: |
-          npm run scrape
-          npm run sync-data
+          pnpm run scrape
+          pnpm run sync-data
 
       - name: Commit updated data (if any)
         run: |
@@ -52,7 +54,7 @@ jobs:
           fi
 
       - name: Build web
-        run: npm run build -w @1rfef/web
+        run: pnpm -w --filter @1rfef/web build
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
