@@ -71,7 +71,23 @@ export default function App() {
   return (
     <div style={{ padding: 16, maxWidth: 1100, margin: "0 auto" }}>
       <header style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
-        <h1 style={{ margin: 0 }}>1RFEF Grup 2</h1>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <h1 style={{ margin: 0 }}>1RFEF Grup 2</h1>
+
+          {computedTable ? (
+            <span
+              style={{
+                fontSize: 12,
+                padding: "4px 8px",
+                borderRadius: 999,
+                border: "1px solid #ddd",
+                background: "#f6f6f6"
+              }}
+            >
+              Mode simulació
+            </span>
+          ) : null}
+        </div>
         <small style={{ opacity: 0.7 }}>
           Actualitzat: {new Date(displayedStandings.updatedAt).toLocaleString()}
         </small>
@@ -157,6 +173,21 @@ export default function App() {
             >
               Calcular
             </button>
+            <button
+              type="button"
+              onClick={resetToRealStandings}
+              disabled={!computedTable}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 10,
+                border: "1px solid #ddd",
+                background: "white",
+                cursor: computedTable ? "pointer" : "not-allowed",
+                opacity: computedTable ? 1 : 0.5
+              }}
+            >
+              Tornar a real
+            </button>
           </div>
 
         </div>
@@ -235,6 +266,10 @@ export default function App() {
       // ignore
     }
     setPredictions({});
+    setComputedTable(null);
+  }
+
+  function resetToRealStandings() {
     setComputedTable(null);
   }
 
