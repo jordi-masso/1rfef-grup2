@@ -28,10 +28,12 @@ async function main() {
   // 1) Baixa i guarda snapshots
 
   // const isCI = process.env.CI === "true";
+  const forceTm = process.env.FORCE_TM === "true";
 
   let standingsJson;
 
   try {
+    if (forceTm) throw new Error("FORCE_TM enabled");
     const standingsHtml = await fetchText(URLS.standings, {
       cachePath: join(debugDir, "besoccer-standings.html")
     });
@@ -45,7 +47,6 @@ async function main() {
     standingsJson = parseTransfermarktStandings(standingsHtmlTm);
     console.log("✅ standings from Transfermarkt");
   }
-
 
   writeFileSync(join(outDir, "standings.json"), JSON.stringify(standingsJson, null, 2), "utf-8");
 
