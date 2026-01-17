@@ -3,8 +3,9 @@ import * as cheerio from "cheerio";
 function toInt(x) {
   const s = String(x ?? "").replace(/\s+/g, " ").trim();
   if (!s) return 0;
-  const n = Number(s.replace(",", "."));
-  return Number.isFinite(n) ? n : 0;
+  // agafa el primer enter que aparegui (robust per "1.", "#1", etc.)
+  const m = s.match(/-?\d+/);
+  return m ? Number(m[0]) : 0;
 }
 
 function slugify(x) {
@@ -16,77 +17,84 @@ function slugify(x) {
     .replace(/(^-|-$)/g, "");
 }
 
-export function parseTransfermarktStandings(html) {
-  const $ = cheerio.load(html);
+function pickStandingsTable($) {
+  // Prioritat: taules típiques de Transfermarkt
+  const preferred = $("table.items, table[class*='items']").toArray();
+  if (preferred.length) return $(preferred[0]);
 
-  // A Transfermarkt, la classificació acostuma a ser una "responsive-table" amb taula dins.
-  // Fem heurística: agafem la primera taula gran que tingui moltes files i columnes típiques.
+  // Fallback: taula amb moltes files
   const tables = $("table").toArray().map((el) => $(el));
-
   let best = null;
   let bestRows = 0;
 
   for (const $t of tables) {
-    const rows = $t.find("tbody tr").filter((_, tr) => $(tr).find("td").length >= 6);
+    const rows = $t.find("tbody tr").filter((_, tr) => $(tr).find("td").length >= 8);
     if (rows.length > bestRows) {
       bestRows = rows.length;
       best = $t;
     }
   }
+  return best;
+}
 
-  if (!best || bestRows < 10) {
-    throw new Error("Could not locate standings table in Transfermarkt HTML.");
-  }
+export function parseTransfermarktStandings(html) {
+  const $ = cheerio.load(html);
+
+  const best = pickStandingsTable($);
+  if (!best) throw new Error("Could not locate standings table in Transfermarkt HTML.");
 
   const table = [];
 
   best.find("tbody tr").each((_, tr) => {
     const $tr = $(tr);
     const $tds = $tr.find("td");
-    if ($tds.length < 6) return;
+    if ($tds.length < 8) return;
 
-    // La posició acostuma a ser primer td
+    // Posició: 1a columna
     const pos = toInt($tds.eq(0).text());
+    if (!pos) return;
 
-    // Nom equip: sovint a un <a> amb /startseite/verein/<id>
-    const $teamLink = $tr.find('a[href*="/startseite/verein/"], a[href*="/verein/"]').first();
-    const teamName = ($teamLink.text() || $tds.eq(1).text()).replace(/\s+/g, " ").trim();
+    // Equip: columna del nom (normalment la 2a)
+    const $teamLink =
+      $tr.find('a[href*="/startseite/verein/"]').first().length
+        ? $tr.find('a[href*="/startseite/verein/"]').first()
+        : $tr.find('a[href*="/verein/"]').first();
 
+    const tdTexts = $tds.toArray().map((el) => $(el).text().replace(/\s+/g, " ").trim());
+    const teamName = (($teamLink.text() || tdTexts[2] || tdTexts[1] || "").replace(/\s+/g, " ")).trim();
+
+    if (!teamName) return;
+
+    // teamId del primer segment del path (slug)
     let teamId = slugify(teamName);
     const href = $teamLink.attr("href") || "";
     if (href) {
       const parts = href.split("/").filter(Boolean);
-      // sovint el slug és el primer segment
       if (parts[0]) teamId = slugify(parts[0]);
     }
 
-    // Columnes típiques TM: MP/W/D/L/GF/GA/GD/Pts poden variar segons competició.
-    // Estratègia: agafar tots els números dels td i mappejar:
-    const nums = $tds
-      .toArray()
-      .map((el) => $(el).text().replace(/\s+/g, " ").trim())
-      .map((t) => t.replace("\u00a0", ""))
-      .filter((t) => t !== "" && /^[-+]?\d+$/.test(t) || /^[-+]?\d+:\d+$/.test(t));
+    // Columnes típques:
+    // 0 pos | 1 team | 2 mp | 3 w | 4 d | 5 l | 6 gf:ga | 7 gd | 8 pts
+    // Però a vegades hi ha una columna extra (p.ex. "Spiele" és a eq(3)...).
+    // Heurística: busca el camp gf:ga i a partir d'això dedueix índexos.
 
-    // Si ve amb GF:GA en un sol camp, ho separem
-    let gf = 0, ga = 0;
+    const gfgaIndex = tdTexts.findIndex((t) =>
+      /^\d+\s*:\s*\d+$/.test(String(t).replace(/\u00a0/g, " ").trim())
+    );
+    if (gfgaIndex === -1) return;
 
-    const gfga = $tr.find("td").toArray().map((el) => $(el).text().trim()).find((t) => /^\d+:\d+$/.test(t));
-    if (gfga) {
-      const [a, b] = gfga.split(":").map((n) => Number(n));
-      gf = a; ga = b;
-    }
+    const gfga = String(tdTexts[gfgaIndex]).replace(/\u00a0/g, " ").trim();
+    const [gf, ga] = gfga.split(":").map((n) => toInt(n));
 
-    // Punts acostumen a ser últim número “fort”
-    const pts = toInt(nums[nums.length - 1]);
-    const mp = toInt(nums[0]);
-    const w = toInt(nums[1]);
-    const d = toInt(nums[2]);
-    const l = toInt(nums[3]);
+    const gd = gf - ga;
 
-    const gd = gf || ga ? (gf - ga) : 0;
+    const mp = toInt(tdTexts[gfgaIndex - 4]); // mp,w,d,l immediatament abans de gf:ga
+    const w = toInt(tdTexts[gfgaIndex - 3]);
+    const d = toInt(tdTexts[gfgaIndex - 2]);
+    const l = toInt(tdTexts[gfgaIndex - 1]);
 
-    if (!teamName || !pos) return;
+    const pts = toInt(tdTexts[gfgaIndex + 2] ?? tdTexts[tdTexts.length - 1]); // sovint a 2 posicions després
+    if (!mp) return;
 
     table.push({ pos, teamId, teamName, pts, mp, w, d, l, gf, ga, gd });
   });
@@ -96,6 +104,6 @@ export function parseTransfermarktStandings(html) {
   return {
     updatedAt: new Date().toISOString(),
     group: "1RFEF 2025-2026 · Grup 2",
-    table
+    table,
   };
 }
