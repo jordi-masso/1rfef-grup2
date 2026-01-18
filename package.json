@@ -8,8 +8,11 @@
     "dev:web": "npm run dev -w @1rfef/web",
     "build:web": "npm run build -w @1rfef/web",
     "preview:web": "npm run preview -w @1rfef/web",
-    "scrape": "npm run scrape -w @1rfef/scraper",
+    "scrape": "cross-env FORCE_TM=true npm run scrape -w @1rfef/scraper",
     "update-data": "npm run scrape && npm run sync-data",
     "sync-data": "node scripts/sync-data.mjs"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
   }
 }

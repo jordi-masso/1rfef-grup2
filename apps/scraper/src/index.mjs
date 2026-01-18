@@ -28,7 +28,7 @@ async function main() {
   // 1) Baixa i guarda snapshots
 
   // const isCI = process.env.CI === "true";
-  const forceTm = process.env.FORCE_TM === "true";
+  const forceTm = process.env.FORCE_TM ? process.env.FORCE_TM === "true" : true;
 
   let standingsJson;
 

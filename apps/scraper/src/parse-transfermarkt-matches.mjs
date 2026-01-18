@@ -85,8 +85,25 @@ export function parseTransfermarktMatches(html) {
 
             // resultat
             const $resLink = $tr.find("a.ergebnis-link").first();
-            const scoreText = $resLink.text().replace(/\s+/g, " ").trim();
+            const scoreTextLink = $resLink.text().replace(/\s+/g, " ").trim();
+
+            // fallback: de vegades el marcador és text pla dins algun <td> (sense ergebnis-link)
+            const tdsText = $tr.find("td").toArray().map(td => $(td).text().replace(/\s+/g, " ").trim());
+            const scoreTextTd = tdsText.find(t => /^\d+\s*:\s*\d+$/.test(t)) || "";
+
+            const scoreText = scoreTextLink || scoreTextTd;
             const score = parseScore(scoreText);
+
+
+            // Fallback per partits recents: marcador present però parseScore no l'ha captat
+            let finalScore = score;
+
+            if (!finalScore && scoreText && /^\d+\s*:\s*\d+$/.test(scoreText)) {
+                const [hg, ag] = scoreText.split(":").map(n => Number(n.trim()));
+                if (Number.isFinite(hg) && Number.isFinite(ag)) {
+                    finalScore = { home: hg, away: ag };
+                }
+            }
 
             const tmMatchId = $resLink.attr("id") || ""; // ex: 4650794
             const matchId =
@@ -94,7 +111,7 @@ export function parseTransfermarktMatches(html) {
                     ? `tm-${tmMatchId}`
                     : `MD${String(matchday).padStart(2, "0")}-${home.teamId}-${away.teamId}-${dateISO ?? "na"}`;
 
-            const status = score ? "played" : "scheduled";
+            const status = finalScore ? "played" : "scheduled";
 
             const match = {
                 matchId,
@@ -108,7 +125,7 @@ export function parseTransfermarktMatches(html) {
                 status
             };
 
-            if (score) match.score = score;
+            if (finalScore) match.score = finalScore;
 
             matches.push(match);
         });
