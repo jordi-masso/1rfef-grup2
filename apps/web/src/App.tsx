@@ -17,9 +17,10 @@ const cardStyle: React.CSSProperties = {
 };
 
 function positionColor(pos: number) {
-  if (pos <= 5) return "#e6f4ea";      // verd suau
-  if (pos <= 10) return "#fff7e6";     // taronja suau
-  return "#fdeaea";                    // vermell suau
+  if (pos === 1) return "#c7ead1";      // verd una mica més fosc (ascens directe)
+  if (pos >= 2 && pos <= 5) return "#e6f4ea"; // verd actual (play-off)
+  if (pos >= 16) return "#fdeaea";      // vermell (descens)
+  return "#f7f7f7";                // resta
 }
 
 function loadPredictions(): PredictionMap {
