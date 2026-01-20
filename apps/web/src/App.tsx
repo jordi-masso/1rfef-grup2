@@ -163,8 +163,8 @@ export default function App() {
   }
 
   const standingsSection = (
-    <section style={{ marginTop: isNarrow ? 18 : 0, minWidth: 0, ...cardStyle }}>
-      <h2 style={{ marginBottom: 4 }}>Classificació</h2>
+    <section style={{ marginTop: isNarrow ? 18 : 0, minWidth: 4, ...cardStyle }}>
+      <h2 style={{ margin: 0, marginBottom: 4 }}>Classificació</h2>
       <StandingsLegend />
       <div style={{ overflowX: "auto" }}>
         <table style={{ width: "100%", borderCollapse: "collapse" }}>
