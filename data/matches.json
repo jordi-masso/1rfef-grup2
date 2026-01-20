@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-01-18T22:15:22.031Z",
+  "updatedAt": "2026-01-20T11:30:33.206Z",
   "competition": "Primera Federación - Grupo II",
   "matchdays": [
     {
@@ -2951,7 +2951,7 @@
       "matchday": 20,
       "matches": [
         {
-          "matchId": "MD20-fc-villarreal-b-fc-cartagena-2026-01-16",
+          "matchId": "tm-4651223",
           "matchday": 20,
           "date": "2026-01-16",
           "time": "7:00 PM",
@@ -2966,7 +2966,7 @@
           }
         },
         {
-          "matchId": "MD20-hercules-alicante-fc-sevilla-b-atletico-2026-01-17",
+          "matchId": "tm-4651217",
           "matchday": 20,
           "date": "2026-01-17",
           "time": "2:00 PM",
@@ -2981,7 +2981,7 @@
           }
         },
         {
-          "matchId": "MD20-marbella-fc-sd-tarazona-na",
+          "matchId": "tm-4651219",
           "matchday": 20,
           "date": null,
           "time": "4:15 PM",
@@ -2996,7 +2996,7 @@
           }
         },
         {
-          "matchId": "MD20-ce-europa-atletico-madrid-b-na",
+          "matchId": "tm-4651221",
           "matchday": 20,
           "date": null,
           "time": null,
@@ -3011,7 +3011,7 @@
           }
         },
         {
-          "matchId": "MD20-ad-alcorcon-antequera-cf-na",
+          "matchId": "tm-4651216",
           "matchday": 20,
           "date": null,
           "time": "6:30 PM",
@@ -3034,7 +3034,11 @@
           "awayTeamId": "cd-eldense",
           "homeName": "Torremolinos",
           "awayName": "Eldense",
-          "status": "scheduled"
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "matchId": "MD20-cd-teruel-ce-sabadell-na",
@@ -3045,7 +3049,11 @@
           "awayTeamId": "ce-sabadell",
           "homeName": "CD Teruel",
           "awayName": "CE Sabadell",
-          "status": "scheduled"
+          "status": "played",
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "matchId": "MD20-fc-algeciras-real-betis-sevilla-b-na",
@@ -3056,7 +3064,11 @@
           "awayTeamId": "real-betis-sevilla-b",
           "homeName": "Algeciras CF",
           "awayName": "Betis Deportivo",
-          "status": "scheduled"
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "matchId": "MD20-ud-ibiza-real-murcia-na",
@@ -3067,7 +3079,11 @@
           "awayTeamId": "real-murcia",
           "homeName": "UD Ibiza",
           "awayName": "Real Murcia",
-          "status": "scheduled"
+          "status": "played",
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "matchId": "MD20-atletico-sanluqueno-gimnastic-de-tarragona-na",
@@ -3078,7 +3094,11 @@
           "awayTeamId": "gimnastic-de-tarragona",
           "homeName": "At. Sanluqueño",
           "awayName": "Gimnàstic",
-          "status": "scheduled"
+          "status": "played",
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         }
       ]
     },

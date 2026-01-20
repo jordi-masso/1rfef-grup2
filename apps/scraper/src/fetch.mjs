@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { dirname } from "node:path";
 import { fetch } from "undici";
 
 function ensureDir(path) {
@@ -7,7 +7,9 @@ function ensureDir(path) {
 }
 
 export async function fetchText(url, { cachePath } = {}) {
-  if (cachePath && existsSync(cachePath)) {
+  const noCache = process.env.NO_CACHE === "true";
+
+  if (!noCache && cachePath && existsSync(cachePath)) {
     return readFileSync(cachePath, "utf-8");
   }
 

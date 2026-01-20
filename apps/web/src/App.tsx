@@ -47,6 +47,14 @@ export default function App() {
   const [computedTable, setComputedTable] = useState<StandingsJson | null>(null);
   const [matchFilter, setMatchFilter] = useState<"all" | "played" | "scheduled">("all");
   const [onlyFocusTeam, setOnlyFocusTeam] = useState(false);
+  const [isNarrow, setIsNarrow] = useState(window.innerWidth < 900);
+  const [mobileTab, setMobileTab] = useState<"matches" | "standings">("matches");
+
+  useEffect(() => {
+    const onResize = () => setIsNarrow(window.innerWidth < 900);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -100,91 +108,118 @@ export default function App() {
   }
 
   const displayedStandings = computedTable ?? standings;
+  function StandingsLegend() {
+    const itemStyle = {
+      display: "flex",
+      alignItems: "center",
+      gap: 6,
+      fontSize: 13
+    };
 
-  return (
-    <div style={{ padding: 16, maxWidth: 1100, margin: "0 auto", background: "#fafafa", borderRadius: 16 }}>
-      <header style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <h1 style={{ margin: 0 }}>1RFEF Grup 2</h1>
+    const box = (color: string) => ({
+      width: 14,
+      height: 14,
+      borderRadius: 4,
+      background: color,
+      border: "1px solid #ccc"
+    });
 
-          {computedTable ? (
-            <span
-              style={{
-                fontSize: 12,
-                padding: "4px 8px",
-                borderRadius: 999,
-                border: "1px solid #ddd",
-                background: "#f6f6f6"
-              }}
-            >
-              Mode simulació
-            </span>
-          ) : null}
+    return (
+      <div style={{ display: "flex", gap: 16, marginBottom: 10 }}>
+        <div style={itemStyle}>
+          <span style={box(positionColor(1))} />
+          Ascens directe
         </div>
-        <small style={{ opacity: 0.7 }}>
-          Actualitzat: {new Date(displayedStandings.updatedAt).toLocaleString()}
-        </small>
-      </header>
+        <div style={itemStyle}>
+          <span style={box(positionColor(2))} />
+          Play-off (2–5)
+        </div>
+        <div style={itemStyle}>
+          <span style={box(positionColor(16))} />
+          Descens (16–20)
+        </div>
+      </div>
+    );
+  }
 
-      <section style={{ marginTop: 18, ...cardStyle }}>
-        <h2 style={{ marginBottom: 8 }}>Classificació</h2>
-        <div style={{ overflowX: "auto" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
-            <thead style={{ position: "sticky", top: 0, zIndex: 1 }}>
-              <tr style={{ textAlign: "center", borderBottom: "1px solid #ddd", background: "#fafafa" }}>
-                <th style={{ padding: 8 }}>Pos</th>
-                <th style={{ padding: 8 }}>Equip</th>
-                <th style={{ padding: 8, textAlign: "right" }}>Pts</th>
-                <th style={{ padding: 8, textAlign: "right" }}>PJ</th>
-                <th style={{ padding: 8, textAlign: "right" }}>G</th>
-                <th style={{ padding: 8, textAlign: "right" }}>E</th>
-                <th style={{ padding: 8, textAlign: "right" }}>P</th>
-                <th style={{ padding: 8, textAlign: "right" }}>GF</th>
-                <th style={{ padding: 8, textAlign: "right" }}>GA</th>
-                <th style={{ padding: 8, textAlign: "right" }}>DG</th>
-              </tr>
-            </thead>
-            <tbody>
-              {displayedStandings.table.map((r) => {
-                const isFocus = r.teamId === FOCUS_TEAM_ID;
+  const standingsSection = (
+    <section style={{ marginTop: isNarrow ? 18 : 0, minWidth: 0, ...cardStyle }}>
+      <h2 style={{ marginBottom: 4 }}>Classificació</h2>
+      <StandingsLegend />
+      <div style={{ overflowX: "auto" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <thead>
+            <tr style={{ textAlign: "center", borderBottom: "1px solid #ddd" }}>
+              {[
+                { label: "Pos", align: "center" },
+                { label: "Equip", align: "center" },
+                { label: "Pts", align: "right" },
+                { label: "PJ", align: "right" },
+                { label: "G", align: "right" },
+                { label: "E", align: "right" },
+                { label: "P", align: "right" },
+                { label: "GF", align: "right" },
+                { label: "GA", align: "right" },
+                { label: "DG", align: "right" },
+              ].map((c) => (
+                <th
+                  key={c.label}
+                  style={{
+                    padding: 8,
+                    textAlign: c.align as any,
+                    background: "#fafafa",
+                    borderBottom: "1px solid #ddd",
+                  }}
+                >
+                  {c.label}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {displayedStandings.table.map((r) => {
+              const isFocus = r.teamId === FOCUS_TEAM_ID;
 
-                return (
-                  <tr
-                    key={r.teamId}
+              return (
+                <tr
+                  key={r.teamId}
+                  style={{
+                    borderBottom: "1px solid #f0f0f0",
+                    background: isFocus ? "#fff7d6" : "transparent",
+                    fontWeight: isFocus ? 700 : 400,
+                  }}
+                >
+                  <td
                     style={{
-                      borderBottom: "1px solid #f0f0f0",
-                      background: isFocus ? "#fff7d6" : "transparent",
-                      fontWeight: isFocus ? 700 : 400
+                      padding: 8,
+                      textAlign: "center",
+                      background: positionColor(r.pos),
+                      fontWeight: 700,
+                      borderRadius: 6,
                     }}
                   >
-                    <td
-                      style={{
-                        padding: 8,
-                        textAlign: "center",
-                        background: positionColor(r.pos),
-                        fontWeight: 700,
-                        borderRadius: 6
-                      }}
-                    >
-                      {r.pos}
-                    </td>
-                    <td style={{ padding: 8, minWidth: 220 }}>{r.teamName}</td>
-                    <td style={{ padding: 8, textAlign: "right", fontWeight: 800 }}>{r.pts}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.mp}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.w}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.d}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.l}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.gf}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.ga}</td>
-                    <td style={{ padding: 8, textAlign: "right" }}>{r.gd}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </section>
+                    {r.pos}
+                  </td>
+                  <td style={{ padding: 8, minWidth: 220 }}>{r.teamName}</td>
+                  <td style={{ padding: 8, textAlign: "right", fontWeight: 800 }}>{r.pts}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.mp}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.w}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.d}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.l}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.gf}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.ga}</td>
+                  <td style={{ padding: 8, textAlign: "right" }}>{r.gd}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
 
+  const matchesSection = (
+    <section style={{ marginTop: isNarrow ? 18 : 0, minWidth: 0, ...cardStyle }}>
       <section style={{ marginTop: 18, ...cardStyle }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <h2 style={{ marginBottom: 8 }}>Jornades</h2>
@@ -318,13 +353,14 @@ export default function App() {
                   key={m.matchId}
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "minmax(220px, 1fr) 140px minmax(220px, 1fr)",
-                    gap: 12,
+                    gridTemplateColumns: "minmax(140px, 1fr) 110px minmax(140px, 1fr)",
+                    gap: 10,
                     alignItems: "center",
                     padding: 12,
                     border: "1px solid #eee",
                     borderRadius: 12,
-                    marginBottom: 10
+                    marginBottom: 10,
+                    columnGap: 18,
                   }}
                 >
                   <div
@@ -400,6 +436,85 @@ export default function App() {
           </ul>
         )}
       </section>
+    </section>
+  );
+
+  return (
+    <div style={{ padding: 16, margin: "0 auto", background: "#fafafa", borderRadius: 16 }}>
+      <header style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <h1 style={{ margin: 0 }}>1RFEF Grup 2</h1>
+
+          {computedTable ? (
+            <span
+              style={{
+                fontSize: 12,
+                padding: "4px 8px",
+                borderRadius: 999,
+                border: "1px solid #ddd",
+                background: "#f6f6f6"
+              }}
+            >
+              Mode simulació
+            </span>
+          ) : null}
+        </div>
+        <small style={{ opacity: 0.7 }}>
+          Actualitzat: {new Date(displayedStandings.updatedAt).toLocaleString()}
+        </small>
+      </header>
+
+      {isNarrow ? (
+        <>
+          <div style={{ display: "flex", gap: 8, marginTop: 18 }}>
+            <button
+              type="button"
+              onClick={() => setMobileTab("matches")}
+              style={{
+                padding: "8px 12px",
+                borderRadius: 999,
+                border: "1px solid #ddd",
+                background: mobileTab === "matches" ? "#f6f6f6" : "white",
+                cursor: "pointer",
+                fontWeight: mobileTab === "matches" ? 700 : 400,
+                flex: 1,
+              }}
+            >
+              Jornades
+            </button>
+            <button
+              type="button"
+              onClick={() => setMobileTab("standings")}
+              style={{
+                padding: "8px 12px",
+                borderRadius: 999,
+                border: "1px solid #ddd",
+                background: mobileTab === "standings" ? "#f6f6f6" : "white",
+                cursor: "pointer",
+                fontWeight: mobileTab === "standings" ? 700 : 400,
+                flex: 1,
+              }}
+            >
+              Classificació
+            </button>
+          </div>
+
+          {mobileTab === "matches" ? matchesSection : standingsSection}
+        </>
+      ) : (
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
+            gap: 18,
+            marginTop: 18,
+            alignItems: "start",
+          }}
+        >
+          {matchesSection}
+          {standingsSection}
+        </div>
+      )}
     </div>
   );
 
