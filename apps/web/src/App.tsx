@@ -413,7 +413,7 @@ export default function App() {
   );
 
   return (
-    <div style={{ padding: 16, margin: "0 auto", background: "#fafafa", borderRadius: 16 }}>
+    <div style={{ padding: 16, margin: "0 auto", background: "#fafafa", borderRadius: 16, color: "#111"}}>
       <header
         style={{
           display: "grid",
