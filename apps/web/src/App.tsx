@@ -38,6 +38,40 @@ function savePredictions(p: PredictionMap) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
 }
 
+function StandingsLegend() {
+  const itemStyle = {
+    display: "flex",
+    alignItems: "center",
+    gap: 6,
+    fontSize: 13
+  };
+
+  const box = (color: string) => ({
+    width: 14,
+    height: 14,
+    borderRadius: 4,
+    background: color,
+    border: "1px solid #ccc"
+  });
+
+  return (
+    <div style={{ display: "flex", gap: 16, marginBottom: 10 }}>
+      <div style={itemStyle}>
+        <span style={box(positionColor(1))} />
+        Ascens directe
+      </div>
+      <div style={itemStyle}>
+        <span style={box(positionColor(2))} />
+        Play-off (2–5)
+      </div>
+      <div style={itemStyle}>
+        <span style={box(positionColor(16))} />
+        Descens (16–20)
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [standings, setStandings] = useState<StandingsJson | null>(null);
   const [matches, setMatches] = useState<MatchesJson | null>(null);
@@ -45,8 +79,6 @@ export default function App() {
   const [selectedMatchday, setSelectedMatchday] = useState<number>(1);
   const [predictions, setPredictions] = useState<PredictionMap>(() => loadPredictions());
   const [computedTable, setComputedTable] = useState<StandingsJson | null>(null);
-  const [matchFilter, setMatchFilter] = useState<"all" | "played" | "scheduled">("all");
-  const [onlyFocusTeam, setOnlyFocusTeam] = useState(false);
   const [isNarrow, setIsNarrow] = useState(window.innerWidth < 900);
   const [mobileTab, setMobileTab] = useState<"matches" | "standings">("matches");
 
@@ -62,7 +94,8 @@ export default function App() {
         const [s, m] = await Promise.all([api.standings(), api.matches()]);
         setStandings(s);
         setMatches(m);
-        setSelectedMatchday(m.matchdays[0]?.matchday ?? 1);
+        const firstWithPending = m.matchdays.find((md) => md.matches.some((x) => x.status !== "played"))?.matchday;
+        setSelectedMatchday(firstWithPending ?? m.matchdays[0]?.matchday ?? 1);
       } catch (e) {
         setError(e instanceof Error ? e.message : String(e));
       }
@@ -83,21 +116,6 @@ export default function App() {
     );
   }
 
-  const matchCounts = useMemo(() => {
-    if (!currentMatchday) return { all: 0, played: 0, scheduled: 0 };
-
-    const filteredByTeam = currentMatchday.matches.filter((m) =>
-      !onlyFocusTeam ? true : m.homeTeamId === FOCUS_TEAM_ID || m.awayTeamId === FOCUS_TEAM_ID
-    );
-
-    return {
-      all: filteredByTeam.length,
-      played: filteredByTeam.filter((m) => m.status === "played").length,
-      scheduled: filteredByTeam.filter((m) => m.status === "scheduled").length
-    };
-  }, [currentMatchday, onlyFocusTeam]);
-
-
   if (!standings || !matches) {
     return (
       <div style={{ padding: 16 }}>
@@ -108,38 +126,40 @@ export default function App() {
   }
 
   const displayedStandings = computedTable ?? standings;
-  function StandingsLegend() {
-    const itemStyle = {
-      display: "flex",
-      alignItems: "center",
-      gap: 6,
-      fontSize: 13
-    };
 
-    const box = (color: string) => ({
-      width: 14,
-      height: 14,
-      borderRadius: 4,
-      background: color,
-      border: "1px solid #ccc"
+  function matchdayPlayedInfo(md: MatchesJson["matchdays"][number]) {
+    const total = md.matches.length;
+    const played = md.matches.filter((m) => m.status === "played").length;
+    return { total, played };
+  }
+
+  function matchdayHasPredictions(md: MatchesJson["matchdays"][number]) {
+    return md.matches.some((m) => {
+      if (m.status !== "scheduled") return false;
+      const p = predictions[m.matchId];
+      const home = (p?.home ?? "").trim();
+      const away = (p?.away ?? "").trim();
+      return home !== "" || away !== "";
     });
+  }
 
-    return (
-      <div style={{ display: "flex", gap: 16, marginBottom: 10 }}>
-        <div style={itemStyle}>
-          <span style={box(positionColor(1))} />
-          Ascens directe
-        </div>
-        <div style={itemStyle}>
-          <span style={box(positionColor(2))} />
-          Play-off (2–5)
-        </div>
-        <div style={itemStyle}>
-          <span style={box(positionColor(16))} />
-          Descens (16–20)
-        </div>
-      </div>
-    );
+  function matchdayMarker(md: MatchesJson["matchdays"][number]) {
+    const { total, played } = matchdayPlayedInfo(md);
+    const hasPred = matchdayHasPredictions(md);
+
+    if (total > 0 && played === total) {
+      return { color: "#e6f4ea", title: "Jornada completada" }; // verd
+    }
+
+    if (played > 0 && played < total) {
+      return { color: "#fff1db", title: "Jornada en curs" }; // taronja (preval)
+    }
+
+    if (hasPred) {
+      return { color: "#fff1db", title: "Hi ha pronòstics" }; // groc
+    }
+
+    return null;
   }
 
   const standingsSection = (
@@ -220,231 +240,190 @@ export default function App() {
 
   const matchesSection = (
     <section style={{ marginTop: isNarrow ? 18 : 0, minWidth: 0, ...cardStyle }}>
-      <section style={{ marginTop: 18, ...cardStyle }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
-          <h2 style={{ marginBottom: 8 }}>Jornades</h2>
+      {/* Fila 1: títol + botons */}
+      <div      >
+        <h2 style={{ margin: 0, textAlign: "center" }}>Jornada {selectedMatchday}</h2>
+      </div>
 
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 10,
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: 10
-            }}
-          >
-            {/* Esquerra: selector jornada */}
-            <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-              <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                <span style={{ opacity: 0.7 }}>Jornada</span>
-                <select
-                  value={selectedMatchday}
-                  onChange={(e) => setSelectedMatchday(Number(e.target.value))}
-                >
-                  {matches.matchdays.map((md) => (
-                    <option key={md.matchday} value={md.matchday}>
-                      {md.matchday}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            </div>
+      {/* Fila 2: grid de jornades */}
+      <div style={{ marginTop: 10, marginBottom: 16 }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(36px, 1fr))",
+            gap: 6,
+            alignItems: "center",
+            width: "100%",
+            maxWidth: 620,
+          }}
+        >
+          {matches.matchdays.map((md) => {
+            const active = md.matchday === selectedMatchday;
+            const marker = matchdayMarker(md);
+            const bgColor = marker?.color ?? "white";
 
-            {/* Dreta: accions */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
+            return (
               <button
+                key={md.matchday}
                 type="button"
-                onClick={calculateStandings}
+                onClick={() => setSelectedMatchday(md.matchday)}
                 style={{
-                  padding: "6px 10px",
+                  padding: "6px 0",
                   borderRadius: 10,
-                  border: "1px solid #ddd",
-                  background: "white",
-                  cursor: "pointer"
-                }}
-              >
-                Calcular
-              </button>
-
-              <button
-                type="button"
-                onClick={resetToRealStandings}
-                disabled={!computedTable}
-                style={{
-                  padding: "6px 10px",
-                  borderRadius: 10,
-                  border: "1px solid #ddd",
-                  background: "white",
-                  cursor: computedTable ? "pointer" : "not-allowed",
-                  opacity: computedTable ? 1 : 0.5
-                }}
-              >
-                Tornar a real
-              </button>
-
-              <button
-                type="button"
-                onClick={clearPredictions}
-                style={{
-                  padding: "6px 10px",
-                  borderRadius: 10,
-                  border: "1px solid #ddd",
-                  background: "white",
-                  cursor: "pointer"
-                }}
-              >
-                Netejar
-              </button>
-
-              <label style={{ display: "flex", alignItems: "center", gap: 8, marginLeft: 6 }}>
-                <input
-                  type="checkbox"
-                  checked={onlyFocusTeam}
-                  onChange={(e) => setOnlyFocusTeam(e.target.checked)}
-                />
-                <span>Només CE Europa</span>
-              </label>
-            </div>
-          </div>
-          <div style={{ display: "flex", gap: 8, marginTop: 8, marginBottom: 12 }}>
-            {[
-              { key: "all", label: `Tots (${matchCounts.all})` },
-              { key: "played", label: `Jugats (${matchCounts.played})` },
-              { key: "scheduled", label: `Pendents (${matchCounts.scheduled})` }
-            ].map((x) => (
-              <button
-                key={x.key}
-                type="button"
-                onClick={() => {
-                  const next = x.key as "all" | "played" | "scheduled";
-                  setMatchFilter(next);
-                  jumpToRelevantMatchday(next);
-                }}
-                style={{
-                  padding: "6px 10px",
-                  borderRadius: 999,
-                  border: "1px solid #ddd",
-                  background: matchFilter === x.key ? "#f6f6f6" : "white",
+                  border: active ? "2px solid #333" : "1px solid #ddd",
+                  background: bgColor,
                   cursor: "pointer",
-                  fontWeight: matchFilter === x.key ? 700 : 400
+                  fontWeight: active ? 800 : 600,
+                  opacity: active ? 1 : 0.9,
+                  transition: "background 120ms ease, border 120ms ease",
                 }}
+                aria-pressed={active}
+                title={marker?.title ?? `Jornada ${md.matchday}`}
               >
-                {x.label}
+                {md.matchday}
               </button>
-            ))}
-          </div>
+            );
+          })}
         </div>
+      </div>
 
-        {!currentMatchday ? (
-          <p>No hi ha dades d’aquesta jornada.</p>
-        ) : (
-          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {currentMatchday.matches
-              .filter((m) => (matchFilter === "all" ? true : m.status === matchFilter))
-              .filter((m) =>
-                !onlyFocusTeam
-                  ? true
-                  : m.homeTeamId === FOCUS_TEAM_ID || m.awayTeamId === FOCUS_TEAM_ID
-              )
-              .map((m) => (
+      {!currentMatchday ? (
+        <p>No hi ha dades d’aquesta jornada.</p>
+      ) : (
+        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+          {currentMatchday.matches.map((m) => (
 
-                <li
-                  key={m.matchId}
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "minmax(140px, 1fr) 110px minmax(140px, 1fr)",
-                    gap: 10,
-                    alignItems: "center",
-                    padding: 12,
-                    border: "1px solid #eee",
-                    borderRadius: 12,
-                    marginBottom: 10,
-                    columnGap: 18,
-                  }}
-                >
+            <li
+              key={m.matchId}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "minmax(140px, 1fr) 110px minmax(140px, 1fr)",
+                gap: 10,
+                alignItems: "center",
+                padding: 12,
+                border: "1px solid #eee",
+                borderRadius: 12,
+                marginBottom: 10,
+                columnGap: 18,
+              }}
+            >
+              <div
+                style={{
+                  textAlign: "right",
+                  fontWeight: m.homeTeamId === FOCUS_TEAM_ID ? 700 : 400,
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis"
+                }}
+                title={m.homeName}
+              >
+                {m.homeName}
+              </div>
+
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                {m.status === "played" && m.score ? (
                   <div
                     style={{
-                      textAlign: "right",
-                      fontWeight: m.homeTeamId === FOCUS_TEAM_ID ? 700 : 400,
-                      whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis"
+                      width: 120,
+                      textAlign: "center",
+                      fontWeight: 800,
+                      padding: "6px 10px",
+                      borderRadius: 999,
+                      border: "1px solid #ddd",
+                      background: "#f6f6f6"
                     }}
-                    title={m.homeName}
                   >
-                    {m.homeName}
+                    {m.score.home} - {m.score.away}
                   </div>
-
-                  <div style={{ display: "flex", justifyContent: "center" }}>
-                    {m.status === "played" && m.score ? (
-                      <div
-                        style={{
-                          width: 120,
-                          textAlign: "center",
-                          fontWeight: 800,
-                          padding: "6px 10px",
-                          borderRadius: 999,
-                          border: "1px solid #ddd",
-                          background: "#f6f6f6"
-                        }}
-                      >
-                        {m.score.home} - {m.score.away}
-                      </div>
-                    ) : (
-                      <div style={{ width: 120, display: "flex", gap: 6, justifyContent: "center", alignItems: "center" }}>
-                        <input
-                          type="text"
-                          inputMode="numeric"
-                          pattern="[0-9]*"
-                          style={{ width: 40, textAlign: "center" }}
-                          value={predictions[m.matchId]?.home ?? ""}
-                          onChange={(e) =>
-                            updatePrediction(m.matchId, "home", e.target.value.replace(/\D/g, ""))
-                          }
-                        />
-                        <span style={{ opacity: 0.7, fontWeight: 700 }}>-</span>
-                        <input
-                          type="text"
-                          inputMode="numeric"
-                          pattern="[0-9]*"
-                          style={{ width: 40, textAlign: "center" }}
-                          value={predictions[m.matchId]?.away ?? ""}
-                          onChange={(e) =>
-                            updatePrediction(m.matchId, "away", e.target.value.replace(/\D/g, ""))
-                          }
-                        />
-                      </div>
-                    )}
+                ) : (
+                  <div style={{ width: 120, display: "flex", gap: 6, justifyContent: "center", alignItems: "center" }}>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      pattern="[0-9]*"
+                      style={{ width: 40, textAlign: "center" }}
+                      value={predictions[m.matchId]?.home ?? ""}
+                      onChange={(e) =>
+                        updatePrediction(m.matchId, "home", e.target.value.replace(/\D/g, ""))
+                      }
+                    />
+                    <span style={{ opacity: 0.7, fontWeight: 700 }}>-</span>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      pattern="[0-9]*"
+                      style={{ width: 40, textAlign: "center" }}
+                      value={predictions[m.matchId]?.away ?? ""}
+                      onChange={(e) =>
+                        updatePrediction(m.matchId, "away", e.target.value.replace(/\D/g, ""))
+                      }
+                    />
                   </div>
+                )}
+              </div>
 
-                  <div
-                    style={{
-                      textAlign: "left",
-                      fontWeight: m.awayTeamId === FOCUS_TEAM_ID ? 700 : 400,
-                      whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis"
-                    }}
-                    title={m.awayName}
-                  >
-                    {m.awayName}
-                  </div>
+              <div
+                style={{
+                  textAlign: "left",
+                  fontWeight: m.awayTeamId === FOCUS_TEAM_ID ? 700 : 400,
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis"
+                }}
+                title={m.awayName}
+              >
+                {m.awayName}
+              </div>
 
-                </li>
-              ))}
-          </ul>
-        )}
-      </section>
+            </li>
+          ))}
+
+          <div style={{ display: "flex", gap: 8, alignItems: "center", justifySelf: "end" }}>
+            <button
+              type="button"
+              onClick={calculateStandings}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 10,
+                border: "1px solid #ddd",
+                background: "white",
+                cursor: "pointer",
+              }}
+            >
+              Calcular
+            </button>
+
+            <button
+              type="button"
+              onClick={clearPredictions}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 10,
+                border: "1px solid #ddd",
+                background: "white",
+                cursor: "pointer",
+              }}
+            >
+              Reiniciar
+            </button>
+          </div>
+        </ul>
+      )}
     </section>
   );
 
   return (
     <div style={{ padding: 16, margin: "0 auto", background: "#fafafa", borderRadius: 16 }}>
-      <header style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
+      <header
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr auto 1fr",
+          alignItems: "center",
+          gap: 12,
+        }}
+      >
+        {/* Esquerra (pot quedar buit o amb el badge si vols) */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <h1 style={{ margin: 0 }}>1RFEF Grup 2</h1>
-
           {computedTable ? (
             <span
               style={{
@@ -452,14 +431,19 @@ export default function App() {
                 padding: "4px 8px",
                 borderRadius: 999,
                 border: "1px solid #ddd",
-                background: "#f6f6f6"
+                background: "#f6f6f6",
               }}
             >
               Mode simulació
             </span>
           ) : null}
         </div>
-        <small style={{ opacity: 0.7 }}>
+
+        {/* Centre (títol centrat de veritat) */}
+        <h1 style={{ margin: 0, textAlign: "center" }}>1RFEF Grup 2</h1>
+
+        {/* Dreta */}
+        <small style={{ opacity: 0.7, justifySelf: "end" }}>
           Actualitzat: {new Date(displayedStandings.updatedAt).toLocaleString()}
         </small>
       </header>
@@ -540,10 +524,6 @@ export default function App() {
       // ignore
     }
     setPredictions({});
-    setComputedTable(null);
-  }
-
-  function resetToRealStandings() {
     setComputedTable(null);
   }
 
@@ -632,49 +612,5 @@ export default function App() {
     if (s == null || s.trim() === "") return null;
     const n = Number(s);
     return Number.isFinite(n) && n >= 0 ? Math.floor(n) : null;
-  }
-
-  function jumpToRelevantMatchday(filter: "all" | "played" | "scheduled") {
-    if (!matches) return;
-
-    if (filter === "played") {
-      // última jornada amb algun partit jugat
-      for (let i = matches.matchdays.length - 1; i >= 0; i--) {
-        const md = matches.matchdays[i];
-        if (
-          md.matches.some((m) => {
-            const teamOk =
-              !onlyFocusTeam ||
-              m.homeTeamId === FOCUS_TEAM_ID ||
-              m.awayTeamId === FOCUS_TEAM_ID;
-
-            return teamOk && m.status === "played";
-          })
-        ) {
-          setSelectedMatchday(md.matchday);
-          return;
-        }
-      }
-    }
-
-    if (filter === "scheduled") {
-      // primera jornada amb algun partit pendent
-      for (let i = 0; i < matches.matchdays.length; i++) {
-        const md = matches.matchdays[i];
-        if (
-          md.matches.some((m) => {
-            const teamOk =
-              !onlyFocusTeam ||
-              m.homeTeamId === FOCUS_TEAM_ID ||
-              m.awayTeamId === FOCUS_TEAM_ID;
-
-            return teamOk && m.status === "scheduled";
-          })
-        ) {
-          setSelectedMatchday(md.matchday);
-          return;
-        }
-      }
-    }
   }
 }
