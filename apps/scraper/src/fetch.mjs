@@ -16,9 +16,13 @@ export async function fetchText(url, { cachePath } = {}) {
   const res = await fetch(url, {
     headers: {
       "user-agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-      "accept-language": "es-ES,es;q=0.9,ca;q=0.8,en;q=0.7"
-    }
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "accept":
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "accept-language": "ca-ES,ca;q=0.9,es-ES;q=0.8,es;q=0.7,en;q=0.6",
+      "referer": "https://www.transfermarkt.com/",
+      "connection": "keep-alive",
+    },
   });
 
   if (!res.ok) {
@@ -33,24 +37,4 @@ export async function fetchText(url, { cachePath } = {}) {
   }
 
   return text;
-}
-
-// apps/scraper/src/fetch.mjs
-export async function fetchText(url) {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "Accept":
-        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-      "Accept-Language": "ca-ES,ca;q=0.9,es-ES;q=0.8,es;q=0.7,en;q=0.6",
-      "Referer": "https://www.transfermarkt.com/",
-      "Connection": "keep-alive",
-    },
-  });
-
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status} fetching ${url}`);
-  }
-  return await res.text();
 }
